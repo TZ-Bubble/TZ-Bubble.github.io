@@ -8,18 +8,27 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>chromebook刷写BIOS及更换系统步骤（以Dell Chromebook 13 7310笔记本为例） | Pan.yp&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="FAQ：                                              Temperature Control Box (2017)PS：Design of a school competitionFunction：Adjust the temperature inside the box to the setting temperatureRealization：Th">
+  <meta name="description" content="FAQ：问1.Chromebook简介答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。特点是：硬盘小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡过200块的玩），国内存量少（大多数人不会用）。问2.为什么要更换系统答：ChromeOS需要在梯子环境下进行激活和下载应用（以浏览器插件形式），且">
 <meta name="keywords" content="-笔记本硬件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="chromebook刷写BIOS及更换系统步骤（以Dell Chromebook 13 7310笔记本为例）">
 <meta property="og:url" content="http://yoursite.com/2019/08/04/chromebook/index.html">
 <meta property="og:site_name" content="Pan.yp&#39;s Blog">
-<meta property="og:description" content="FAQ：                                              Temperature Control Box (2017)PS：Design of a school competitionFunction：Adjust the temperature inside the box to the setting temperatureRealization：Th">
+<meta property="og:description" content="FAQ：问1.Chromebook简介答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。特点是：硬盘小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡过200块的玩），国内存量少（大多数人不会用）。问2.为什么要更换系统答：ChromeOS需要在梯子环境下进行激活和下载应用（以浏览器插件形式），且">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-26T08:08:55.468Z">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh289d7uj30g40c33zr.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4cv7qfj31400u04qs.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4ijdh5j30g406rjuv.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4mw5eaj30i70b8whl.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4r2wjxj30xc0m80sx.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4w7qraj30xc0m8e81.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5cnwi9j31120rs0uz.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5glhzwj31120rs77c.jpg">
+<meta property="og:updated_time" content="2019-08-04T03:20:46.142Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="chromebook刷写BIOS及更换系统步骤（以Dell Chromebook 13 7310笔记本为例）">
-<meta name="twitter:description" content="FAQ：                                              Temperature Control Box (2017)PS：Design of a school competitionFunction：Adjust the temperature inside the box to the setting temperatureRealization：Th">
+<meta name="twitter:description" content="FAQ：问1.Chromebook简介答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。特点是：硬盘小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡过200块的玩），国内存量少（大多数人不会用）。问2.为什么要更换系统答：ChromeOS需要在梯子环境下进行激活和下载应用（以浏览器插件形式），且">
+<meta name="twitter:image" content="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh289d7uj30g40c33zr.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Pan.yp&#39;s Blog" type="application/atom+xml">
   
@@ -167,19 +176,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><html>
-    <table style="margin-left: auto; margin-right: auto;">
-        <tr>
-            <td>
-                <!--左侧内容-->
+        <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><p><strong>问1.Chromebook简介</strong><br>答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。<br>特点是：硬盘小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡过200块的玩），国内存量少（大多数人不会用）。<br><strong>问2.为什么要更换系统</strong><br>答：ChromeOS需要在梯子环境下进行激活和下载应用（以浏览器插件形式），且因为ChromeOS的系统国内不实用，所以垃圾佬们刷成Windows或者Ubuntu之类用着很爽。<br><strong>问3.刷系统要注意什么</strong><br>答：采用ARM的CPU的电脑刷了多数不完美，虽然便宜，但电脑没电了固件就凉了，不推荐。Intel的CPU刷了之后可以和正常商业笔记本一样正常使用（个别机器驱动完美，大部分有各种驱动问题）。<br><strong>问4.刷系统前为什么先刷bios</strong><br>答：bios是用于引导电脑系统的（类似手机的BootLoader），先刷掉原生bios，之后再刷系统就类似其他商用笔记本一样自由装机了，摆脱了谷歌系统的限制。<br>Chromebook的bios分为johnlewis和mrchromebox两家。前者很坑，推荐后者，问题少。刷好后开机是一个兔子标志。<br><strong>问5.BIOS刷坏了怎么办</strong><br>答：可以用CH341的BIOS编程器+刷机夹（淘宝上40元左右）刷机 ，夹子刷不好也能焊下来刷。<br>嫌麻烦可以找我，50包邮（手动滑稽。<br><strong>问6.建议购买的机型</strong><br>答：coolstar的网站上介绍了win10下面驱动完美的几款：acer的C720，HP的chromebook14，Dell的chromebook13 7310，尤其是Dell的chromebook13这款，可以更换2242的大容量ssd硬盘，win10驱动也很完美，本文以该款为例介绍刷机。</p>
+<h1 id="几个常用网站"><a href="#几个常用网站" class="headerlink" title="几个常用网站"></a>几个常用网站</h1><p><strong>1.</strong> <a href="http://www.mrchromebox.tech" target="_blank" rel="noopener">www.mrchromebox.tech</a><br>主要介绍各种chromebook的bios固件支持和刷机流程。</p>
+<p><strong>2.</strong><a href="https://coolstar.org/chromebook" target="_blank" rel="noopener">coolstar.org/chromebook</a><br>各种Chromebook笔记本在windows下面的驱动可以找到，有些硬件windows下面无法驱动也会有说明。</p>
+<p><strong>3.</strong><a href="http://www.github.com/dnschneid/crouton" target="_blank" rel="noopener">www.github.com/dnschneid/crouton</a><br>crouton是一个ChromeOS里面的Linux容器，可以保留原系统安装其他发行版本Linux，仍然需要进入开发者模式，没有实际操作过。</p>
+<h1 id="刷机步骤："><a href="#刷机步骤：" class="headerlink" title="刷机步骤："></a>刷机步骤：</h1><h3 id="1-卸读写保护螺丝"><a href="#1-卸读写保护螺丝" class="headerlink" title="1.卸读写保护螺丝"></a>1.卸读写保护螺丝</h3><p><strong>1.</strong>拆D面后盖，拧一大堆螺丝就行了，注意要用力，别拧滑丝了。<br><strong>2.</strong>拧开后，卸写保护螺丝（螺丝旁写了WP，在靠近电源口位置），这个螺丝很紧，要用力别滑丝了，螺丝外观和机内其他的没有明显区别，卸掉可以看到主板上的一圈裸露的触点。建议先断开电池供电，防止螺丝掉在主板上烧主板（我就把主板弄冒烟过）。<br><strong>3.</strong>卸完可以根据需要更换2242接口的ssd，咸鱼上有不明来路的但是用着没出问题。<br><strong>4.</strong>换好就没硬件上什么事情了，可以装回D面拧螺丝了。</p>
+<p><strong>PS:</strong>这款垃圾电脑就是能换ssd所以才好用。不换的话，可以用tf卡扩展，16GB硬盘可以装比较小的Linux发行版或者俄罗斯大神的精简Win10。</p>
+<p><img src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh289d7uj30g40c33zr.jpg" alt="写保护螺丝位置"></p>
+<h3 id="2-开始开发者模式"><a href="#2-开始开发者模式" class="headerlink" title="2.开始开发者模式"></a>2.开始开发者模式</h3><p><strong>1.</strong>完全关机，保证电量够刷机<br><strong>2.</strong>按电源键+esc+刷新键(第1排左到右第4个键，就是对应一般电脑的F4键)，可以进入开发者模式<br><strong>3.</strong>按ctrl+d跳系统警告：<br><strong>4.</strong>按回车键关闭系统验证：<br><strong>5.</strong>重新启动按ctrl+d跳系统警告，可能需多按几次，不要按空格，按了就恢复回去了。。<br><strong>6.</strong>等待系统自动会部署开发者模式环境，等进度条跑完。<br><strong>7.</strong>自动重启后，可以使用ctrl+alt+后退键（F2位置键）和 ctrl+alt+前进键（F3位置键）切换当前桌面和控制台（类似Linux），确认开发者模式已经打开。</p>
+<p><img src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4cv7qfj31400u04qs.jpg" alt="正在等待开发者模式开启"></p>
+<h3 id="3-关闭系统写保护"><a href="#3-关闭系统写保护" class="headerlink" title="3.关闭系统写保护"></a>3.关闭系统写保护</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>确定写保护螺丝已拆，输入以下命令解除写入限制</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification</span><br></pre></td></tr></table></figure>
 
-<p>Temperature Control Box (2017)<br>PS：Design of a school competition<br>Function：Adjust the temperature inside the box to the setting temperature<br>Realization：The MCU combined with PID control algorithm output PWM wave, through the motor drive module control semiconductor refrigeration chip to achieve temperature control function. Temperature value was obtained by DS18B20 sensor.</p>
-<pre><code>&lt;/td&gt;
-&lt;td&gt;
-    &lt;!--右侧内容--&gt;</code></pre><p>Wind Board Angle Control System (2017)<br>PS：Design of a school competition<br>Function：The coreless motor can blow the windsurfing board to the setting angle<br>Realization：The MCU combined with the PID control algorithm, outputs the PWM wave and controls the coreless motor through motor drive to achieve temperature control. The angle value of the wind board is obtained by MPU6050.</p>
-<pre><code>        &lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;</code></pre></td></tr></table></html>
+<p>执行上述命令后后会输出 –partition X，执行下一句，并且将X换成输出的数字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification --partition X</span><br></pre></td></tr></table></figure>
+
+<p>（X 代表数字，前一命令若返回4，就输入–partition 4，见下图）<br><strong>5.</strong>重启设备让文件系统更改生效，这个shell里reboot和shutdown都不行。。手动关机吧</p>
+<p><img src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4ijdh5j30g406rjuv.jpg" alt="记住这里的partitions后面的数字"></p>
+<h3 id="4-刷Mrchromebox的BIOS"><a href="#4-刷Mrchromebox的BIOS" class="headerlink" title="4.刷Mrchromebox的BIOS"></a>4.刷Mrchromebox的BIOS</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>输入sudo bash，会出现红色的local host命令前缀，这时类似进入了root用户。<br>实际如果输入su root后也不知道密码默认多少，说明这是个类Linux的shell，使用有一些区别。<br><strong>5.</strong>输入以下脚本开始刷mrchromebox的bios。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd; curl -LO https://mrchromebox.tech/firmware-util.sh &amp;&amp; sudo bash firmware-util.sh</span><br></pre></td></tr></table></figure>
+
+<p>跟据脚本提示内容，选择install/update full rom firmware，即会彻底把cmos芯片里的bios内容刷掉（也就是过程有变砖风险，但是自己没出过问题）。<br>中途会提示你插入一个u盘备份你的bios，照做吧。<br>一路提示，输入y之后，显示等待下载，一直等就刷好了。<br>实际测试这个服务器不是很稳定，万一下不好的话，换个网试试，或者局域网梯子，再在chrome浏览器里用1080端口代理过去。</p>
+<p><img src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4mw5eaj30i70b8whl.jpg" alt="脚本的根选项"></p>
+<h3 id="5-使用U盘装系统"><a href="#5-使用U盘装系统" class="headerlink" title="5.使用U盘装系统"></a>5.使用U盘装系统</h3><p><strong>方法1</strong>：插pe和带有镜像的u盘进去装，适用windows。<br><strong>方法2</strong>：用写盘工具制作启动盘刷机，适用windows和各种发行版Linux。大多数Linux甚至可以直接在u盘上跑系统即live系统。</p>
+<h4 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h4><p><strong>1.</strong>开机几秒内显示兔子界时按下esc，类似一般商用电脑的进入bios的F1键的功能。<br><img src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4r2wjxj30xc0m80sx.jpg" alt="传说中兔子页面，意味着bios已刷入"></p>
+<p><strong>2.</strong>进入后选择Boot Manager，选择启动u盘的对应选项。<br><img src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4w7qraj30xc0m8e81.jpg" alt="这里进入root manager选择u盘启动"></p>
+<p><strong>3.</strong>剩余部分和一般做系统类似，不赘诉。做好系统后从兔子界面就能自动进系统了。需要多系统启动则需基于Linux的grub。<br><strong>4.</strong>如果是装Win10，装的时候要外接鼠标，开机后去coolstar的网站上装驱动即可，主要是触摸板驱动。<br><strong>5.</strong>该机装其他linux，manjaro驱动完美，CentOS和Win10类似。总结就是win10（自己装驱动后）和某些兼容好的Linux下面驱动完美。</p>
+<p>最后晒一下自己的新电脑，pixel2015，Linus最爱的两台电脑之一<br><img src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5cnwi9j31120rs0uz.jpg" alt="合盖"></p>
+<p><img src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5glhzwj31120rs77c.jpg" alt="开盖"></p>
 
       
 
@@ -261,6 +285,20 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2019/09/20/keyboard-of-tablet/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Some Electronic Designs by Yipeng Pan
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -382,6 +420,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">-笔记本硬件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">-Electronic Design</a>
               </li>
             
             <div class="clearfix"></div>
