@@ -6,24 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>笔记本电脑黑苹果（Hackintosh）安装步骤（以thinkpad x220笔记本为例） | Pan.yp&#39;s Blog</title>
+  <title>Hackintosh（笔记本电脑黑苹果）安装步骤（以thinkpad x220笔记本为例） | Pan.yp&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="FAQ：问1.Hackintosh简介答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论">
 <meta name="keywords" content="-笔记本硬件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="笔记本电脑黑苹果（Hackintosh）安装步骤（以thinkpad x220笔记本为例）">
+<meta property="og:title" content="Hackintosh（笔记本电脑黑苹果）安装步骤（以thinkpad x220笔记本为例）">
 <meta property="og:url" content="http://yoursite.com/2019/06/16/Hackintosh/index.html">
 <meta property="og:site_name" content="Pan.yp&#39;s Blog">
 <meta property="og:description" content="FAQ：问1.Hackintosh简介答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
-<meta property="og:image" content="https://wx3.sinaimg.cn/mw690/006tqVdYgy1g7gio94f1uj31400u0u0y.jpg">
-<meta property="og:image" content="https://wx3.sinaimg.cn/mw690/006tqVdYgy1g7giommc4ej31hc0u0k84.jpg">
-<meta property="og:updated_time" content="2019-09-29T13:50:48.004Z">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/006tqVdYgy1g7gio94f1uj31400u0u0y.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/006tqVdYgy1g7giommc4ej31hc0u0k84.jpg">
+<meta property="og:updated_time" content="2019-09-29T14:15:40.715Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="笔记本电脑黑苹果（Hackintosh）安装步骤（以thinkpad x220笔记本为例）">
+<meta name="twitter:title" content="Hackintosh（笔记本电脑黑苹果）安装步骤（以thinkpad x220笔记本为例）">
 <meta name="twitter:description" content="FAQ：问1.Hackintosh简介答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论">
-<meta name="twitter:image" content="https://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
+<meta name="twitter:image" content="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Pan.yp&#39;s Blog" type="application/atom+xml">
   
@@ -174,7 +174,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      笔记本电脑黑苹果（Hackintosh）安装步骤（以thinkpad x220笔记本为例）
+      Hackintosh（笔记本电脑黑苹果）安装步骤（以thinkpad x220笔记本为例）
     </h1>
   
 
@@ -196,14 +196,14 @@
 <li>更换16G的ddr3内存</li>
 <li>改装高分屏（从主板扩展坞DP接口出引出）  </li>
 <li>使用12芯大容量电池  </li>
-<li>刷BIOS白名单，更换网卡  </li>
+<li>刷写BIOS白名单，更换网卡  </li>
 <li>更换type—C诱骗线，可使用联想口红电源</li>
 </ul>
 <p><strong>问3.黑苹果难点</strong><br>答：难点在于1.系统安装 2.自引导 3.驱动安装<br>若要引导双系统，相对比较棘手<br>考虑到驱动安装问题，台式机由于其硬件可定制易更换，实现完美黑苹果较简单</p>
 <p><strong>问4.区别概念：UEFI+GPT与BIOS+MBR</strong><br>答：系统硬盘采用GPT分区方式则使用UEFI引导，采用MBR分区方式则使用BIOS引导。前者是新趋势，一般出厂机器均采用该方式，开机不进行硬件自检，启动速度更快，但后者兼容性好</p>
 <p><strong>问5.Clover是什么</strong><br>答：Clover 四叶草是一款黑苹果系统引导程序软件。可以实现<br>多系统启动的引导</p>
 <p><strong>问6.EFI文件夹</strong><br>答：采用UEFI引导时通过修改该文件夹，可以实现用Clover引导系统</p>
-<p><strong>问6.白名单+黑苹果无线网卡</strong><br>答：刷bios白名单后可突破联想电脑对于其他品牌网卡支持的限制，更换网卡用于兼容苹果系统，否则只能使用有线网络</p>
+<p><strong>问6.白名单+黑苹果无线网卡</strong><br>答：刷写BIOS白名单后可突破联想电脑对于其他品牌网卡支持的限制，更换网卡用于兼容苹果系统，否则只能使用有线网络</p>
 <hr>
 <h1 id="几个常用网站"><a href="#几个常用网站" class="headerlink" title="几个常用网站"></a>几个常用网站</h1><p><strong>1.</strong> <a href="http://x220.mcdonnelltech.com/" target="_blank" rel="noopener">x220.mcdonnelltech.com/</a><br>一个专门的x220黑苹果的教程网站</p>
 <p><strong>2.</strong> <a href="https://blog.daliansky.net/" target="_blank" rel="noopener">blog.daliansky.net/</a><br>黑果小兵，有各类Hackintosh资源和实用教程</p>
@@ -243,11 +243,11 @@
 <li><p>若要实现双系统：<a href="https://blog.csdn.net/jankingmeaning/article/details/85183308#_54" target="_blank" rel="noopener">Win+Mac双系统教程</a></p>
 </li>
 </ul>
-<h4 id="6-成果"><a href="#6-成果" class="headerlink" title="6.成果"></a>6.成果</h4><img width="400" src="https://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
+<h4 id="6-成果"><a href="#6-成果" class="headerlink" title="6.成果"></a>6.成果</h4><img width="400" src="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
 <br> <br>
-<img width="400" src="https://wx3.sinaimg.cn/mw690/006tqVdYgy1g7gio94f1uj31400u0u0y.jpg">
+<img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYgy1g7gio94f1uj31400u0u0y.jpg">
 <br> <br>
-<img width="400" src="https://wx3.sinaimg.cn/mw690/006tqVdYgy1g7giommc4ej31hc0u0k84.jpg">
+<img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYgy1g7giommc4ej31hc0u0k84.jpg">
 
 
       
