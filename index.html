@@ -387,13 +387,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/15/Video Presentation/">Video Presentation</a>
+      <a class="article-title" href="/2019/09/10/Video Presentation/">Video Presentation</a>
     </h1>
   
 
         
-        <a href="/2019/09/15/Video Presentation/" class="archive-article-date">
-  	<time datetime="2019-09-15T02:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-15</time>
+        <a href="/2019/09/10/Video Presentation/" class="archive-article-date">
+  	<time datetime="2019-09-10T02:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-10</time>
 </a>
         
       </header>
@@ -404,7 +404,7 @@
 <p><big><big><strong>Tracking Four-Rotor Aircraft</strong></big></big>  </p>
 <iframe src="//player.bilibili.com/player.html?aid=69330852&cid=120158160&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="75%" height="350"> </iframe>
 
-<p><br> <br></p>
+
 <iframe src="//player.bilibili.com/player.html?aid=69330852&cid=120158406&page=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="75%" height="350"> </iframe>
 
 <hr>
@@ -437,7 +437,119 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/15/Video Presentation/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/10/Video Presentation/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-chromebook" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/04/chromebook/">chromebook刷写BIOS及更换系统步骤（以Dell Chromebook 13 7310笔记本为例）</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/04/chromebook/" class="archive-article-date">
+  	<time datetime="2019-07-03T16:10:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><p><strong>问1.Chromebook简介</strong><br>答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。<br>特点是：硬盘小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡过200块的玩），国内存量少（大多数人不会用）。<br><strong>问2.为什么要更换系统</strong><br>答：ChromeOS需要在梯子环境下进行激活和下载应用（以浏览器插件形式），且因为ChromeOS的系统国内不实用，所以垃圾佬们刷成Windows或者Ubuntu之类用着很爽。<br><strong>问3.刷系统要注意什么</strong><br>答：采用ARM的CPU的电脑刷了多数不完美，虽然便宜，但电脑没电了固件就凉了，不推荐。Intel的CPU刷了之后可以和正常商业笔记本一样正常使用（个别机器驱动完美，大部分有各种驱动问题）。<br><strong>问4.刷系统前为什么先刷bios</strong><br>答：bios是用于引导电脑系统的（类似手机的BootLoader），先刷掉原生bios，之后再刷系统就类似其他商用笔记本一样自由装机了，摆脱了谷歌系统的限制。<br>Chromebook的bios分为johnlewis和mrchromebox两家。前者很坑，推荐后者，问题少。刷好后开机是一个兔子标志。<br><strong>问5.BIOS刷坏了怎么办</strong><br>答：可以用CH341的BIOS编程器+刷机夹（淘宝上40元左右）刷机 ，夹子刷不好也能焊下来刷。<br>嫌麻烦可以找我，50包邮（手动滑稽。<br><strong>问6.建议购买的机型</strong><br>答：coolstar的网站上介绍了win10下面驱动完美的几款：acer的C720，HP的chromebook14，Dell的chromebook13 7310，尤其是Dell的chromebook13这款，可以更换2242的大容量ssd硬盘，win10驱动也很完美，本文以该款为例介绍刷机。</p>
+<h1 id="几个常用网站"><a href="#几个常用网站" class="headerlink" title="几个常用网站"></a>几个常用网站</h1><p><strong>1.</strong> <a href="http://www.mrchromebox.tech" target="_blank" rel="noopener">www.mrchromebox.tech</a><br>主要介绍各种chromebook的bios固件支持和刷机流程。</p>
+<p><strong>2.</strong><a href="https://coolstar.org/chromebook" target="_blank" rel="noopener">coolstar.org/chromebook</a><br>各种Chromebook笔记本在windows下面的驱动可以找到，有些硬件windows下面无法驱动也会有说明。</p>
+<p><strong>3.</strong><a href="http://www.github.com/dnschneid/crouton" target="_blank" rel="noopener">www.github.com/dnschneid/crouton</a><br>crouton是一个ChromeOS里面的Linux容器，可以保留原系统安装其他发行版本Linux，仍然需要进入开发者模式，没有实际操作过。</p>
+<h1 id="刷机步骤："><a href="#刷机步骤：" class="headerlink" title="刷机步骤："></a>刷机步骤：</h1><h3 id="1-卸读写保护螺丝"><a href="#1-卸读写保护螺丝" class="headerlink" title="1.卸读写保护螺丝"></a>1.卸读写保护螺丝</h3><p><strong>1.</strong>拆D面后盖，拧一大堆螺丝就行了，注意要用力，别拧滑丝了。<br><strong>2.</strong>拧开后，卸写保护螺丝（螺丝旁写了WP，在靠近电源口位置），这个螺丝很紧，要用力别滑丝了，螺丝外观和机内其他的没有明显区别，卸掉可以看到主板上的一圈裸露的触点。建议先断开电池供电，防止螺丝掉在主板上烧主板（我就把主板弄冒烟过）。<br><strong>3.</strong>卸完可以根据需要更换2242接口的ssd，咸鱼上有不明来路的但是用着没出问题。<br><strong>4.</strong>换好就没硬件上什么事情了，可以装回D面拧螺丝了。</p>
+<p><strong>PS:</strong>这款垃圾电脑就是能换ssd所以才好用。不换的话，可以用tf卡扩展，16GB硬盘可以装比较小的Linux发行版或者俄罗斯大神的精简Win10。</p>
+<img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh289d7uj30g40c33zr.jpg">
+
+
+<h3 id="2-开始开发者模式"><a href="#2-开始开发者模式" class="headerlink" title="2.开始开发者模式"></a>2.开始开发者模式</h3><p><strong>1.</strong>完全关机，保证电量够刷机<br><strong>2.</strong>按电源键+esc+刷新键(第1排左到右第4个键，就是对应一般电脑的F4键)，可以进入开发者模式<br><strong>3.</strong>按ctrl+d跳系统警告：<br><strong>4.</strong>按回车键关闭系统验证：<br><strong>5.</strong>重新启动按ctrl+d跳系统警告，可能需多按几次，不要按空格，按了就恢复回去了。。<br><strong>6.</strong>等待系统自动会部署开发者模式环境，等进度条跑完。<br><strong>7.</strong>自动重启后，可以使用ctrl+alt+后退键（F2位置键）和 ctrl+alt+前进键（F3位置键）切换当前桌面和控制台（类似Linux），确认开发者模式已经打开。</p>
+<img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4cv7qfj31400u04qs.jpg">
+
+<h3 id="3-关闭系统写保护"><a href="#3-关闭系统写保护" class="headerlink" title="3.关闭系统写保护"></a>3.关闭系统写保护</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>确定写保护螺丝已拆，输入以下命令解除写入限制</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification</span><br></pre></td></tr></table></figure>
+
+<p>执行上述命令后后会输出 –partition X，执行下一句，并且将X换成输出的数字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification --partition X</span><br></pre></td></tr></table></figure>
+
+<p>（X 代表数字，前一命令若返回4，就输入–partition 4，见下图）<br><strong>5.</strong>重启设备让文件系统更改生效，这个shell里reboot和shutdown都不行。。手动关机吧</p>
+<img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4ijdh5j30g406rjuv.jpg">
+
+<h3 id="4-刷Mrchromebox的BIOS"><a href="#4-刷Mrchromebox的BIOS" class="headerlink" title="4.刷Mrchromebox的BIOS"></a>4.刷Mrchromebox的BIOS</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>输入sudo bash，会出现红色的local host命令前缀，这时类似进入了root用户。<br>实际如果输入su root后也不知道密码默认多少，说明这是个类Linux的shell，使用有一些区别。<br><strong>5.</strong>输入以下脚本开始刷mrchromebox的bios。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd; curl -LO https://mrchromebox.tech/firmware-util.sh &amp;&amp; sudo bash firmware-util.sh</span><br></pre></td></tr></table></figure>
+
+<p>跟据脚本提示内容，选择install/update full rom firmware，即会彻底把cmos芯片里的bios内容刷掉（也就是过程有变砖风险，但是自己没出过问题）。<br>中途会提示你插入一个u盘备份你的bios，照做吧。<br>一路提示，输入y之后，显示等待下载，一直等就刷好了。<br>实际测试这个服务器不是很稳定，万一下不好的话，换个网试试，或者局域网梯子，再在chrome浏览器里用1080端口代理过去。</p>
+<img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4mw5eaj30i70b8whl.jpg">
+
+<h3 id="5-使用U盘装系统"><a href="#5-使用U盘装系统" class="headerlink" title="5.使用U盘装系统"></a>5.使用U盘装系统</h3><p><strong>方法1</strong>：插pe和带有镜像的u盘进去装，适用windows。<br><strong>方法2</strong>：用写盘工具制作启动盘刷机，适用windows和各种发行版Linux。大多数Linux甚至可以直接在u盘上跑系统即live系统。</p>
+<h4 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h4><p><strong>1.</strong>开机几秒内显示兔子界时按下esc，类似一般商用电脑的进入bios的F1键的功能。<br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4r2wjxj30xc0m80sx.jpg"></p>
+<p><strong>2.</strong>进入后选择Boot Manager，选择启动u盘的对应选项。<br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4w7qraj30xc0m8e81.jpg"></p>
+<p><strong>3.</strong>剩余流程和一般做系统流程类似，不赘诉。做好系统后从兔子界面就能自动进系统了。需要多系统启动则需基于Linux的grub。<br><strong>4.</strong>如果是装Win10，装的时候要外接鼠标，开机后去coolstar的网站上装驱动即可，主要是触摸板驱动。<br><strong>5.</strong>该机装其他linux，manjaro驱动完美，CentOS和Win10类似。总结就是win10（自己装驱动后）和某些兼容好的Linux下面驱动完美。</p>
+<h3 id="6-成果"><a href="#6-成果" class="headerlink" title="6.成果"></a>6.成果</h3><p><strong>1.</strong>以下分别将Dell Chromebook 13刷成了Centos，Windows，Manjaro系统。</p>
+<img width="400" src="https://wx3.sinaimg.cn/mw690/006tqVdYgy1g7gif8fmt6j31400u0u0x.jpg">
+<br> <br>
+<img width="400" src="https://wx2.sinaimg.cn/mw690/006tqVdYgy1g7giesj6yej31400u0qv5.jpg">
+<br> <br>
+<img width="400" src="https://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gieznn2vj31400u0u0x.jpg">
+
+<p><br> <br><br><strong>2.</strong>最后晒一下自己的新电脑，pixel2015，Linus最爱的两台电脑之一<br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5cnwi9j31120rs0uz.jpg"><br><br> <br><br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5glhzwj31120rs77c.jpg"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">-笔记本硬件</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/04/chromebook/">展开全文 >></a>
         </p>
       
 
@@ -474,13 +586,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/04/Hackintosh/">笔记本电脑黑苹果（Hackintosh）安装步骤（以thinkpad x220笔记本为例）</a>
+      <a class="article-title" href="/2019/06/16/Hackintosh/">笔记本电脑黑苹果（Hackintosh）安装步骤（以thinkpad x220笔记本为例）</a>
     </h1>
   
 
         
-        <a href="/2019/08/04/Hackintosh/" class="archive-article-date">
-  	<time datetime="2019-08-03T16:27:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-04</time>
+        <a href="/2019/06/16/Hackintosh/" class="archive-article-date">
+  	<time datetime="2019-06-15T16:10:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-16</time>
 </a>
         
       </header>
@@ -571,119 +683,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/04/Hackintosh/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-chromebook" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/04/chromebook/">chromebook刷写BIOS及更换系统步骤（以Dell Chromebook 13 7310笔记本为例）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/04/chromebook/" class="archive-article-date">
-  	<time datetime="2019-08-03T16:27:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><p><strong>问1.Chromebook简介</strong><br>答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。<br>特点是：硬盘小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡过200块的玩），国内存量少（大多数人不会用）。<br><strong>问2.为什么要更换系统</strong><br>答：ChromeOS需要在梯子环境下进行激活和下载应用（以浏览器插件形式），且因为ChromeOS的系统国内不实用，所以垃圾佬们刷成Windows或者Ubuntu之类用着很爽。<br><strong>问3.刷系统要注意什么</strong><br>答：采用ARM的CPU的电脑刷了多数不完美，虽然便宜，但电脑没电了固件就凉了，不推荐。Intel的CPU刷了之后可以和正常商业笔记本一样正常使用（个别机器驱动完美，大部分有各种驱动问题）。<br><strong>问4.刷系统前为什么先刷bios</strong><br>答：bios是用于引导电脑系统的（类似手机的BootLoader），先刷掉原生bios，之后再刷系统就类似其他商用笔记本一样自由装机了，摆脱了谷歌系统的限制。<br>Chromebook的bios分为johnlewis和mrchromebox两家。前者很坑，推荐后者，问题少。刷好后开机是一个兔子标志。<br><strong>问5.BIOS刷坏了怎么办</strong><br>答：可以用CH341的BIOS编程器+刷机夹（淘宝上40元左右）刷机 ，夹子刷不好也能焊下来刷。<br>嫌麻烦可以找我，50包邮（手动滑稽。<br><strong>问6.建议购买的机型</strong><br>答：coolstar的网站上介绍了win10下面驱动完美的几款：acer的C720，HP的chromebook14，Dell的chromebook13 7310，尤其是Dell的chromebook13这款，可以更换2242的大容量ssd硬盘，win10驱动也很完美，本文以该款为例介绍刷机。</p>
-<h1 id="几个常用网站"><a href="#几个常用网站" class="headerlink" title="几个常用网站"></a>几个常用网站</h1><p><strong>1.</strong> <a href="http://www.mrchromebox.tech" target="_blank" rel="noopener">www.mrchromebox.tech</a><br>主要介绍各种chromebook的bios固件支持和刷机流程。</p>
-<p><strong>2.</strong><a href="https://coolstar.org/chromebook" target="_blank" rel="noopener">coolstar.org/chromebook</a><br>各种Chromebook笔记本在windows下面的驱动可以找到，有些硬件windows下面无法驱动也会有说明。</p>
-<p><strong>3.</strong><a href="http://www.github.com/dnschneid/crouton" target="_blank" rel="noopener">www.github.com/dnschneid/crouton</a><br>crouton是一个ChromeOS里面的Linux容器，可以保留原系统安装其他发行版本Linux，仍然需要进入开发者模式，没有实际操作过。</p>
-<h1 id="刷机步骤："><a href="#刷机步骤：" class="headerlink" title="刷机步骤："></a>刷机步骤：</h1><h3 id="1-卸读写保护螺丝"><a href="#1-卸读写保护螺丝" class="headerlink" title="1.卸读写保护螺丝"></a>1.卸读写保护螺丝</h3><p><strong>1.</strong>拆D面后盖，拧一大堆螺丝就行了，注意要用力，别拧滑丝了。<br><strong>2.</strong>拧开后，卸写保护螺丝（螺丝旁写了WP，在靠近电源口位置），这个螺丝很紧，要用力别滑丝了，螺丝外观和机内其他的没有明显区别，卸掉可以看到主板上的一圈裸露的触点。建议先断开电池供电，防止螺丝掉在主板上烧主板（我就把主板弄冒烟过）。<br><strong>3.</strong>卸完可以根据需要更换2242接口的ssd，咸鱼上有不明来路的但是用着没出问题。<br><strong>4.</strong>换好就没硬件上什么事情了，可以装回D面拧螺丝了。</p>
-<p><strong>PS:</strong>这款垃圾电脑就是能换ssd所以才好用。不换的话，可以用tf卡扩展，16GB硬盘可以装比较小的Linux发行版或者俄罗斯大神的精简Win10。</p>
-<img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh289d7uj30g40c33zr.jpg">
-
-
-<h3 id="2-开始开发者模式"><a href="#2-开始开发者模式" class="headerlink" title="2.开始开发者模式"></a>2.开始开发者模式</h3><p><strong>1.</strong>完全关机，保证电量够刷机<br><strong>2.</strong>按电源键+esc+刷新键(第1排左到右第4个键，就是对应一般电脑的F4键)，可以进入开发者模式<br><strong>3.</strong>按ctrl+d跳系统警告：<br><strong>4.</strong>按回车键关闭系统验证：<br><strong>5.</strong>重新启动按ctrl+d跳系统警告，可能需多按几次，不要按空格，按了就恢复回去了。。<br><strong>6.</strong>等待系统自动会部署开发者模式环境，等进度条跑完。<br><strong>7.</strong>自动重启后，可以使用ctrl+alt+后退键（F2位置键）和 ctrl+alt+前进键（F3位置键）切换当前桌面和控制台（类似Linux），确认开发者模式已经打开。</p>
-<img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4cv7qfj31400u04qs.jpg">
-
-<h3 id="3-关闭系统写保护"><a href="#3-关闭系统写保护" class="headerlink" title="3.关闭系统写保护"></a>3.关闭系统写保护</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>确定写保护螺丝已拆，输入以下命令解除写入限制</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification</span><br></pre></td></tr></table></figure>
-
-<p>执行上述命令后后会输出 –partition X，执行下一句，并且将X换成输出的数字</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification --partition X</span><br></pre></td></tr></table></figure>
-
-<p>（X 代表数字，前一命令若返回4，就输入–partition 4，见下图）<br><strong>5.</strong>重启设备让文件系统更改生效，这个shell里reboot和shutdown都不行。。手动关机吧</p>
-<img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4ijdh5j30g406rjuv.jpg">
-
-<h3 id="4-刷Mrchromebox的BIOS"><a href="#4-刷Mrchromebox的BIOS" class="headerlink" title="4.刷Mrchromebox的BIOS"></a>4.刷Mrchromebox的BIOS</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>输入sudo bash，会出现红色的local host命令前缀，这时类似进入了root用户。<br>实际如果输入su root后也不知道密码默认多少，说明这是个类Linux的shell，使用有一些区别。<br><strong>5.</strong>输入以下脚本开始刷mrchromebox的bios。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd; curl -LO https://mrchromebox.tech/firmware-util.sh &amp;&amp; sudo bash firmware-util.sh</span><br></pre></td></tr></table></figure>
-
-<p>跟据脚本提示内容，选择install/update full rom firmware，即会彻底把cmos芯片里的bios内容刷掉（也就是过程有变砖风险，但是自己没出过问题）。<br>中途会提示你插入一个u盘备份你的bios，照做吧。<br>一路提示，输入y之后，显示等待下载，一直等就刷好了。<br>实际测试这个服务器不是很稳定，万一下不好的话，换个网试试，或者局域网梯子，再在chrome浏览器里用1080端口代理过去。</p>
-<img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4mw5eaj30i70b8whl.jpg">
-
-<h3 id="5-使用U盘装系统"><a href="#5-使用U盘装系统" class="headerlink" title="5.使用U盘装系统"></a>5.使用U盘装系统</h3><p><strong>方法1</strong>：插pe和带有镜像的u盘进去装，适用windows。<br><strong>方法2</strong>：用写盘工具制作启动盘刷机，适用windows和各种发行版Linux。大多数Linux甚至可以直接在u盘上跑系统即live系统。</p>
-<h4 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h4><p><strong>1.</strong>开机几秒内显示兔子界时按下esc，类似一般商用电脑的进入bios的F1键的功能。<br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4r2wjxj30xc0m80sx.jpg"></p>
-<p><strong>2.</strong>进入后选择Boot Manager，选择启动u盘的对应选项。<br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4w7qraj30xc0m8e81.jpg"></p>
-<p><strong>3.</strong>剩余流程和一般做系统流程类似，不赘诉。做好系统后从兔子界面就能自动进系统了。需要多系统启动则需基于Linux的grub。<br><strong>4.</strong>如果是装Win10，装的时候要外接鼠标，开机后去coolstar的网站上装驱动即可，主要是触摸板驱动。<br><strong>5.</strong>该机装其他linux，manjaro驱动完美，CentOS和Win10类似。总结就是win10（自己装驱动后）和某些兼容好的Linux下面驱动完美。</p>
-<h3 id="6-成果"><a href="#6-成果" class="headerlink" title="6.成果"></a>6.成果</h3><p><strong>1.</strong>以下分别将Dell Chromebook 13刷成了Centos，Windows，Manjaro系统。</p>
-<img width="400" src="https://wx3.sinaimg.cn/mw690/006tqVdYgy1g7gif8fmt6j31400u0u0x.jpg">
-<br> <br>
-<img width="400" src="https://wx2.sinaimg.cn/mw690/006tqVdYgy1g7giesj6yej31400u0qv5.jpg">
-<br> <br>
-<img width="400" src="https://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gieznn2vj31400u0u0x.jpg">
-
-<p><br> <br><br><strong>2.</strong>最后晒一下自己的新电脑，pixel2015，Linus最爱的两台电脑之一<br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5cnwi9j31120rs0uz.jpg"><br><br> <br><br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5glhzwj31120rs77c.jpg"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">-笔记本硬件</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/04/chromebook/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/06/16/Hackintosh/">展开全文 >></a>
         </p>
       
 
