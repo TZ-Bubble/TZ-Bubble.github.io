@@ -8,21 +8,21 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>笔记本电脑黑苹果（Hackintosh）安装步骤（以thinkpad x220笔记本为例） | Pan.yp&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="FAQ：问1.Hackintosh简介答：OS X是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装OS X系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论坛有很多">
+  <meta name="description" content="FAQ：问1.Hackintosh简介答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论">
 <meta name="keywords" content="-笔记本硬件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="笔记本电脑黑苹果（Hackintosh）安装步骤（以thinkpad x220笔记本为例）">
 <meta property="og:url" content="http://yoursite.com/2019/06/16/Hackintosh/index.html">
 <meta property="og:site_name" content="Pan.yp&#39;s Blog">
-<meta property="og:description" content="FAQ：问1.Hackintosh简介答：OS X是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装OS X系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论坛有很多">
+<meta property="og:description" content="FAQ：问1.Hackintosh简介答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
 <meta property="og:image" content="https://wx3.sinaimg.cn/mw690/006tqVdYgy1g7gio94f1uj31400u0u0y.jpg">
 <meta property="og:image" content="https://wx3.sinaimg.cn/mw690/006tqVdYgy1g7giommc4ej31hc0u0k84.jpg">
-<meta property="og:updated_time" content="2019-09-29T10:15:01.258Z">
+<meta property="og:updated_time" content="2019-09-29T13:50:48.004Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记本电脑黑苹果（Hackintosh）安装步骤（以thinkpad x220笔记本为例）">
-<meta name="twitter:description" content="FAQ：问1.Hackintosh简介答：OS X是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装OS X系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论坛有很多">
+<meta name="twitter:description" content="FAQ：问1.Hackintosh简介答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论">
 <meta name="twitter:image" content="https://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Pan.yp&#39;s Blog" type="application/atom+xml">
@@ -187,32 +187,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><p><strong>问1.Hackintosh简介</strong><br>答：OS X是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装OS X系统被称为黑苹果（与白苹果对应）即Hackintosh</p>
-<p><strong>问2.x220机型简介</strong><br>答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430<br>以其中x220为例，可玩性很高（专门网论坛有很多玩家）：<br>优点：小前灯，小红点，Thinkpad经典七行键盘，DP接口，非下沉式屏轴，防滚架设计，二手多公司货成色新，皮实耐用。<br>缺点：机身较厚，分辨率低，声音外放差，平台老旧，多翻新洋垃圾 </p>
+        <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><p><strong>问1.Hackintosh简介</strong><br>答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh</p>
+<p><strong>问2.x220机型简介</strong><br>答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430<br>以其中x220为例，可玩性很高（专门网论坛上就有许多玩家）：<br>优点：小前灯，小红点，Thinkpad经典七行键盘，DP接口，非下沉式屏轴，防滚架设计，二手多公司货成色新，替换配件极多，皮实耐用。<br>缺点：机身较厚，分辨率低，外放喇叭差，主板CPU平台老旧，多翻新洋垃圾 </p>
 <p>可做以下升级： </p>
 <ul>
-<li>添加msata2.0的ssd作为系统盘（提速显著）  </li>
+<li>添加msata2.0的ssd作为系统盘（提速显著）</li>
+<li>更换指纹掌托  </li>
 <li>更换16G的ddr3内存</li>
 <li>改装高分屏（从主板扩展坞DP接口出引出）  </li>
 <li>使用12芯大容量电池  </li>
 <li>刷BIOS白名单，更换网卡  </li>
 <li>更换type—C诱骗线，可使用联想口红电源</li>
 </ul>
-<p><strong>问3.黑苹果难点</strong><br>答：难点在于1.系统安装 2.自引导 3.驱动安装<br>若要双系统，引导上会遇到更多问题<br>考虑到驱动安装问题，台式机由于其硬件可定制易更换，完美黑苹果非常容易</p>
-<p><strong>问4.区别概念：UEFI+GPT与BIOS+MBR</strong><br>答：采用GPT分区方式则使用UEFI引导，采用MBR分区方式则使用BIOS引导。前者是新趋势，开机不进行硬件自检，更快，后者兼容性好</p>
+<p><strong>问3.黑苹果难点</strong><br>答：难点在于1.系统安装 2.自引导 3.驱动安装<br>若要引导双系统，相对比较棘手<br>考虑到驱动安装问题，台式机由于其硬件可定制易更换，实现完美黑苹果较简单</p>
+<p><strong>问4.区别概念：UEFI+GPT与BIOS+MBR</strong><br>答：系统硬盘采用GPT分区方式则使用UEFI引导，采用MBR分区方式则使用BIOS引导。前者是新趋势，一般出厂机器均采用该方式，开机不进行硬件自检，启动速度更快，但后者兼容性好</p>
 <p><strong>问5.Clover是什么</strong><br>答：Clover 四叶草是一款黑苹果系统引导程序软件。可以实现<br>多系统启动的引导</p>
-<p><strong>问6.EFI文件夹</strong><br>答：采用UEFI引导时通过修改该文件夹实现用Clover引导</p>
-<p><strong>问6.白名单+黑苹果无线网卡</strong><br>答：白名单用于突破联系电脑对于其他品牌网卡的支持，更换网卡用于兼容苹果系统，否则只能使用有线网络</p>
+<p><strong>问6.EFI文件夹</strong><br>答：采用UEFI引导时通过修改该文件夹，可以实现用Clover引导系统</p>
+<p><strong>问6.白名单+黑苹果无线网卡</strong><br>答：刷bios白名单后可突破联想电脑对于其他品牌网卡支持的限制，更换网卡用于兼容苹果系统，否则只能使用有线网络</p>
 <hr>
 <h1 id="几个常用网站"><a href="#几个常用网站" class="headerlink" title="几个常用网站"></a>几个常用网站</h1><p><strong>1.</strong> <a href="http://x220.mcdonnelltech.com/" target="_blank" rel="noopener">x220.mcdonnelltech.com/</a><br>一个专门的x220黑苹果的教程网站</p>
-<p><strong>2.</strong> <a href="https://blog.daliansky.net/" target="_blank" rel="noopener">blog.daliansky.net/</a><br>黑果小兵，有各类Hackintosh资源和教程</p>
-<p><strong>3.</strong> <a href="https://forum.51nb.com" target="_blank" rel="noopener">forum.51nb.com</a><br>51nb即专门网，一个thinkpad以及图形工作站等笔记本硬件交流网站</p>
+<p><strong>2.</strong> <a href="https://blog.daliansky.net/" target="_blank" rel="noopener">blog.daliansky.net/</a><br>黑果小兵，有各类Hackintosh资源和实用教程</p>
+<p><strong>3.</strong> <a href="https://forum.51nb.com" target="_blank" rel="noopener">forum.51nb.com</a><br>51nb即专门网，一个thinkpad以及图形工作站等笔记本电脑硬件交流网站</p>
 <hr>
 <h1 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h1><h4 id="1-前期工作："><a href="#1-前期工作：" class="headerlink" title="1.前期工作："></a>1.前期工作：</h4><ul>
 <li>准备材料：多个U盘（制作PE，镜像安装盘等）,1台x220电脑,1台其他电脑</li>
-<li>最好预留一整个物理磁盘给MAC系统</li>
+<li>最好单独预留一整块物理磁盘预装Mac OS系统</li>
 </ul>
-<h4 id="2-制作Mac系统盘："><a href="#2-制作Mac系统盘：" class="headerlink" title="2.制作Mac系统盘："></a>2.制作Mac系统盘：</h4><p>将黑苹果镜像刻录到U盘，此步在另一台电脑上操作。  </p>
+<h4 id="2-制作Mac-OS系统盘："><a href="#2-制作Mac-OS系统盘：" class="headerlink" title="2.制作Mac OS系统盘："></a>2.制作Mac OS系统盘：</h4><p>将黑苹果镜像刻录到U盘，此步在另一台电脑上操作。  </p>
 <ul>
 <li><p>在此网址下载黑苹果镜像：<br><a href="https://blog.daliansky.net/macOS-Mojave-10.14.4-18E226-official-version-with-Clover-4903-original-image.html" target="_blank" rel="noopener">黑苹果镜像下载地址</a></p>
 </li>
@@ -224,7 +225,7 @@
 </li>
 </ul>
 <h4 id="3-mac系统安装，并使用u盘进行引导"><a href="#3-mac系统安装，并使用u盘进行引导" class="headerlink" title="3.mac系统安装，并使用u盘进行引导"></a>3.mac系统安装，并使用u盘进行引导</h4><ul>
-<li>使用系统盘实现mac系统的安装，并通过u盘引导进入：<a href="https://blog.csdn.net/jankingmeaning/article/details/85183308#_54" target="_blank" rel="noopener">系统安装以及U盘引导教程</a></li>
+<li>使用系统盘实现Mac OS系统的安装，并通过u盘引导进入：<a href="https://blog.csdn.net/jankingmeaning/article/details/85183308#_54" target="_blank" rel="noopener">系统安装以及U盘引导教程</a></li>
 </ul>
 <h4 id="4-进入系统修改磁盘EFI文件"><a href="#4-进入系统修改磁盘EFI文件" class="headerlink" title="4.进入系统修改磁盘EFI文件"></a>4.进入系统修改磁盘EFI文件</h4><ul>
 <li>此时Hackintosh系统已安装完毕，但需要依赖U盘引导而无法自引导。故需要修改磁盘的EFI文件实现自引导。  具体内容详见教程中内容——“教你将U盘上的EFI复制到磁盘的EFI分区,脱离USB运行[macOS篇]”：<br><a href="https://blog.daliansky.net/MacOS-installation-tutorial-XiaoMi-Pro-installation-process-records.html" target="_blank" rel="noopener">修改EFI实现自引导教程地址</a></li>
@@ -335,7 +336,7 @@
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          chromebook刷写BIOS及更换系统步骤（以Dell Chromebook 13 7310笔记本为例）
+          chromebook刷写BIOS及更换系统步骤（以Dell chromebook 13 7310笔记本为例）
         
       </div>
     </a>
