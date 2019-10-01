@@ -56,28 +56,22 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
+				<li><a href="/">HomePage</a></li>
 	        
 				<li><a href="/tags/CV/">CV</a></li>
 	        
 				<li><a href="/tags/Portfolio/">Portfolio</a></li>
 	        
-				<li><a href="/tags/笔记本硬件/">笔记本硬件</a></li>
+				<li><a href="/tags/Computer Hardware/">Computer Hardware</a></li>
+	        
+				<li><a href="/tags/Graduation Project/">Graduation Project</a></li>
 	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">小诗一首</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">Articles</a>
     			
             
 		</nav>
@@ -122,6 +116,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -140,13 +136,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">HomePage</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/CV/">CV</a></li>
+					<li style="width: 20%"><a href="/tags/CV/">CV</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Portfolio/">Portfolio</a></li>
+					<li style="width: 20%"><a href="/tags/Portfolio/">Portfolio</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/笔记本硬件/">笔记本硬件</a></li>
+					<li style="width: 20%"><a href="/tags/Computer Hardware/">Computer Hardware</a></li>
+		        
+					<li style="width: 20%"><a href="/tags/Graduation Project/">Graduation Project</a></li>
 		        
 				</ul>
 			</nav>
@@ -492,7 +490,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><p><strong>问1.Chromebook简介</strong><br>答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。<br>特点是：硬盘小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡过200块的玩），国内存量少（大多数人不会用）。<br><strong>问2.为什么要更换系统</strong><br>答：ChromeOS需要在梯子环境下进行激活和下载应用（以浏览器插件形式），且因为ChromeOS的系统国内不实用，所以垃圾佬们刷成Windows或者Ubuntu之类用着很爽。<br><strong>问3.刷系统要注意什么</strong><br>答：采用ARM的CPU的电脑刷了多数不完美，虽然便宜，但电脑没电了固件就凉了，不推荐。Intel的CPU刷了之后可以和正常商业笔记本一样正常使用（个别机器驱动完美，大部分有各种驱动问题）。<br><strong>问4.刷系统前为什么先刷BIOS</strong><br>答：BIOS是用于引导电脑系统的（类似手机的BootLoader），先刷掉原生BIOS，之后再刷系统就类似其他商用笔记本一样自由装机了，摆脱了谷歌系统的限制。<br>Chromebook的BIOS分为johnlewis和mrchromebox两种。前者很坑，推荐后者，问题少。刷好后开机是一个兔子标志。<br><strong>问5.BIOS刷坏了怎么办</strong><br>答：可以用CH341的BIOS编程器+刷机夹（淘宝上40元左右）刷机 ，夹子刷不好也能焊下来刷。<br>嫌麻烦可以找我，50包邮（手动滑稽。<br><strong>问6.建议购买的机型</strong><br>答：coolstar的网站上介绍了win10下面驱动完美的几款chromebook：acer的C720，HP的chromebook14，Dell的chromebook13 7310，尤其是Dell的chromebook13这款，可以更换2242规格的大容量ssd硬盘，win10驱动也很完美，本文以该款为例介绍刷机方法。</p>
+        <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><p><strong>问1.Chromebook简介</strong><br>答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。<br>特点是：系统特殊，硬盘非常小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡到过200块一台的），国内存量少（国内环境不适合使用）。<br><strong>问2.为什么要更换系统</strong><br>答：ChromeOS需要在梯子环境下进行激活和下载应用（以浏览器插件形式），且因为ChromeOS的系统国内不实用，所以垃圾佬们刷成Windows或者Ubuntu之类用着很爽。<br><strong>问3.刷系统要注意什么</strong><br>答：采用ARM的CPU的电脑刷了多数不完美，虽然便宜，但电脑没电了固件就凉了，不推荐。Intel的CPU刷了之后可以和正常商业笔记本一样正常使用（个别机器驱动完美，大部分有各种驱动问题）。<br><strong>问4.刷系统前为什么先刷BIOS</strong><br>答：BIOS是用于引导电脑系统的（类似手机的BootLoader），先刷掉原生BIOS，之后再刷系统就类似其他商用笔记本一样自由装机了，摆脱了谷歌系统的限制。<br>Chromebook的BIOS分为johnlewis和mrchromebox两种。前者很坑，推荐后者，问题少。刷好后开机是一个兔子标志。<br><strong>问5.BIOS刷坏了怎么办</strong><br>答：可以用CH341的BIOS编程器+刷机夹（淘宝上40元左右）刷机 ，夹子刷不好也能焊下来刷。<br>嫌麻烦可以找我，50包邮（手动滑稽。<br><strong>问6.建议购买的机型</strong><br>答：coolstar的网站上介绍了win10下面驱动完美的几款chromebook：acer的C720，HP的chromebook14，Dell的chromebook13 7310，尤其是Dell的chromebook13这款，可以更换2242规格的大容量ssd硬盘，win10驱动也很完美，本文以该款为例介绍刷机方法。</p>
 <h1 id="几个常用网站"><a href="#几个常用网站" class="headerlink" title="几个常用网站"></a>几个常用网站</h1><p><strong>1.</strong> <a href="http://www.mrchromebox.tech" target="_blank" rel="noopener">mrchromebox.tech</a><br>主要介绍各种chromebook的BIOS固件支持和刷机流程。</p>
 <p><strong>2.</strong><a href="https://coolstar.org/chromebook" target="_blank" rel="noopener">coolstar.org/chromebook</a><br>各种Chromebook笔记本在Windows下面的驱动可以找到，有些Windows下硬件无法驱动的硬件也会有提及。</p>
 <p><strong>3.</strong><a href="http://www.github.com/dnschneid/crouton" target="_blank" rel="noopener">github.com/dnschneid/crouton</a><br>crouton是一个ChromeOS内的Linux容器，可以在保留原生系统情况下安装其他发行版本Linux，仍然需要进入开发者模式，但没有实际操作过。</p>
@@ -501,16 +499,16 @@
 <img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh289d7uj30g40c33zr.jpg">
 
 
-<h3 id="2-开始开发者模式"><a href="#2-开始开发者模式" class="headerlink" title="2.开始开发者模式"></a>2.开始开发者模式</h3><p><strong>1.</strong>完全关机，保证电量够刷机<br><strong>2.</strong>按电源键+esc+刷新键(第1排左到右第4个键，就是对应一般电脑的F4键)，可以进入开发者模式<br><strong>3.</strong>按ctrl+d跳系统警告：<br><strong>4.</strong>按回车键关闭系统验证：<br><strong>5.</strong>重新启动按ctrl+d跳系统警告，可能需多按几次，不要按空格，按了就恢复回去了。。<br><strong>6.</strong>等待系统自动会部署开发者模式环境，等进度条跑完。<br><strong>7.</strong>自动重启后，可以使用ctrl+alt+后退键（F2位置键）和 ctrl+alt+前进键（F3位置键）切换当前桌面和控制台（类似Linux），确认开发者模式已经打开。</p>
+<h3 id="2-开始开发者模式"><a href="#2-开始开发者模式" class="headerlink" title="2.开始开发者模式"></a>2.开始开发者模式</h3><p><strong>1.</strong>完全关机，保证电量够刷机。<br><strong>2.</strong>按电源键+esc+刷新键(第1排左到右第4个键，就是对应一般电脑的F4键)，可以进入开发者模式。<br><strong>3.</strong>按ctrl+d跳系统警告。<br><strong>4.</strong>按回车键关闭系统验证。<br><strong>5.</strong>重新启动按ctrl+d跳系统警告，可能需多按几次，不要按空格，按了就恢复回去了。。<br><strong>6.</strong>等待系统自动会部署开发者模式环境，等进度条跑完。<br><strong>7.</strong>自动重启后，可以使用ctrl+alt+后退键（F2位置键）和 ctrl+alt+前进键（F3位置键）切换当前桌面和控制台（类似Linux），确认开发者模式已经打开。</p>
 <img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4cv7qfj31400u04qs.jpg">
 
-<h3 id="3-关闭系统写保护"><a href="#3-关闭系统写保护" class="headerlink" title="3.关闭系统写保护"></a>3.关闭系统写保护</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>确定写保护螺丝已拆，输入以下命令解除写入限制</p>
+<h3 id="3-关闭系统写保护"><a href="#3-关闭系统写保护" class="headerlink" title="3.关闭系统写保护"></a>3.关闭系统写保护</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>确定写保护螺丝已拆，输入以下命令解除写入限制。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification</span><br></pre></td></tr></table></figure>
 
 <p>执行上述命令后后会输出 –partition X，执行下一句，并且将X换成输出的数字</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification --partition X</span><br></pre></td></tr></table></figure>
 
-<p>（X 代表数字，前一命令若返回4，就输入–partition 4，见下图）<br><strong>5.</strong>重启设备让文件系统更改生效，这个shell里reboot和shutdown都不行。。手动关机吧</p>
+<p>（X 代表数字，前一命令若返回4，就输入–partition 4，见下图）<br><strong>5.</strong>重启设备让文件系统更改生效，这个shell里reboot和shutdown都不行。。手动关机吧。</p>
 <img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4ijdh5j30g406rjuv.jpg">
 
 <h3 id="4-刷Mrchromebox的BIOS"><a href="#4-刷Mrchromebox的BIOS" class="headerlink" title="4.刷Mrchromebox的BIOS"></a>4.刷Mrchromebox的BIOS</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>输入sudo bash，会出现红色的local host命令前缀，这时类似进入了root用户。<br>实际如果输入su root后也不知道密码默认多少，说明这是个类Linux的shell，使用有一些区别。<br><strong>5.</strong>输入以下脚本开始刷mrchromebox的BIOS。</p>
@@ -547,7 +545,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">-笔记本硬件</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-Computer Hardware</a>
         		</li>
       		
 		</ul>
@@ -660,7 +658,7 @@
 </li>
 <li><p>驱动安装：<br><a href="https://www.jianshu.com/p/5933a23e0b03" target="_blank" rel="noopener">黑苹果驱动安装教程</a></p>
 </li>
-<li><p>若要实现双系统：<a href="https://blog.csdn.net/jankingmeaning/article/details/85183308#_54" target="_blank" rel="noopener">Win+Mac双系统教程</a></p>
+<li><p>若要实现双系统：<br><a href="https://blog.csdn.net/jankingmeaning/article/details/85183308#_54" target="_blank" rel="noopener">Win+Mac双系统教程</a></p>
 </li>
 </ul>
 <h4 id="6-成果"><a href="#6-成果" class="headerlink" title="6.成果"></a>6.成果</h4><img width="400" src="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
@@ -682,7 +680,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">-笔记本硬件</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-Computer Hardware</a>
         		</li>
       		
 		</ul>
@@ -772,29 +770,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">小诗一首</a></li>
+      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">Articles</a></li>
       
         
     </ul>
@@ -815,15 +797,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">-Computer Hardware</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">-CV</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">-Portfolio</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">-笔记本硬件</a>
               </li>
             
             <div class="clearfix"></div>
@@ -870,29 +852,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="https://github.com/TZ-Bubble/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>GitHub</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://user.qzone.qq.com/1140887835/infocenter/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>QQ空间</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">我是没事的时候&lt;br&gt;在无聊的时候&lt;br&gt;想的时候&lt;br&gt;到一个地方&lt;br&gt;不相同的地方&lt;br&gt;到这个地方来&lt;br&gt;来的吧&lt;br&gt;可以瞧一瞧&lt;br&gt;不一样的地方&lt;br&gt;不相同的地方&lt;br&gt;很多很多&lt;br&gt;&lt;br&gt; ——吟游诗人</div>
-  	  	
-    	</section>
     
   </div>
   
