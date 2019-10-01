@@ -183,6 +183,9 @@
         
       </header>
     
+	
+	     
+	
     <div class="article-entry" itemprop="articleBody">
       
         <img width="400" src="http://wx4.sinaimg.cn/mw690/006tqVdYly1g7d0bk68ztj30ff08pmxy.jpg">  
@@ -302,9 +305,6 @@
 
 
 
-<!-- 目录内容 -->
-     
-<!-- 目录内容结束 -->
   
     <article id="post-Awards" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -324,6 +324,9 @@
         
       </header>
     
+	
+	     
+	
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
@@ -362,7 +365,7 @@
 <br> <br>
 <img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYgy1g7ipr28twxj318k0u0u0y.jpg">
 <br> <br>
-<img width="400" src="https://wx2.sinaimg.cn/mw690/006tqVdYgy1g7ipq97ethj30tl0l0akh.jpg">
+<img width="400" src="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7ipq97ethj30tl0l0akh.jpg">
 <br> <br>
 <img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYgy1g7ipr7911dj315b0u01ky.jpg">
 <br> <br>
@@ -420,9 +423,6 @@
 
 
 
-<!-- 目录内容 -->
-     
-<!-- 目录内容结束 -->
   
     <article id="post-CV" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -442,6 +442,9 @@
         
       </header>
     
+	
+	     
+	
     <div class="article-entry" itemprop="articleBody">
       
         
@@ -504,9 +507,6 @@
 
 
 
-<!-- 目录内容 -->
-     
-<!-- 目录内容结束 -->
   
     <article id="post-Video Presentation" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -526,6 +526,9 @@
         
       </header>
     
+	
+	     
+	
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
@@ -593,9 +596,6 @@
 
 
 
-<!-- 目录内容 -->
-     
-<!-- 目录内容结束 -->
   
     <article id="post-chromebook" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -615,6 +615,9 @@
         
       </header>
     
+	
+	     
+	
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><p><strong>问1.Chromebook简介</strong><br>答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。<br>特点是：系统特殊，硬盘非常小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡到过200块一台的），国内存量少（国内环境不适合使用）。<br><strong>问2.为什么要更换系统</strong><br>答：ChromeOS需要在梯子环境下进行激活和下载应用（以浏览器插件形式），且因为ChromeOS的系统国内不实用，所以垃圾佬们刷成Windows或者Ubuntu之类用着很爽。<br><strong>问3.刷系统要注意什么</strong><br>答：采用ARM的CPU的电脑刷了多数不完美，虽然便宜，但电脑没电了固件就凉了，不推荐。Intel的CPU刷了之后可以和正常商业笔记本一样正常使用（个别机器驱动完美，大部分有各种驱动问题）。<br><strong>问4.刷系统前为什么先刷BIOS</strong><br>答：BIOS是用于引导电脑系统的（类似手机的BootLoader），先刷掉原生BIOS，之后再刷系统就类似其他商用笔记本一样自由装机了，摆脱了谷歌系统的限制。<br>Chromebook的BIOS分为johnlewis和mrchromebox两种。前者很坑，推荐后者，问题少。刷好后开机是一个兔子标志。<br><strong>问5.BIOS刷坏了怎么办</strong><br>答：可以用CH341的BIOS编程器+刷机夹（淘宝上40元左右）刷机 ，夹子刷不好也能焊下来刷。<br>嫌麻烦可以找我，50包邮（手动滑稽。<br><strong>问6.建议购买的机型</strong><br>答：coolstar的网站上介绍了win10下面驱动完美的几款chromebook：acer的C720，HP的chromebook14，Dell的chromebook13 7310，尤其是Dell的chromebook13这款，可以更换2242规格的大容量ssd硬盘，win10驱动也很完美，本文以该款为例介绍刷机方法。</p>
@@ -641,7 +644,7 @@
 <h2 id="4-刷Mrchromebox的BIOS"><a href="#4-刷Mrchromebox的BIOS" class="headerlink" title="4.刷Mrchromebox的BIOS"></a>4.刷Mrchromebox的BIOS</h2><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>输入sudo bash，会出现红色的local host命令前缀，这时类似进入了root用户。<br>实际如果输入su root后也不知道密码默认多少，说明这是个类Linux的shell，使用有一些区别。<br><strong>5.</strong>输入以下脚本开始刷mrchromebox的BIOS。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd; curl -LO https://mrchromebox.tech/firmware-util.sh &amp;&amp; sudo bash firmware-util.sh</span><br></pre></td></tr></table></figure>
 
-<p>跟据脚本提示内容，选择install/update full rom firmware，即会彻底把cmos芯片里的BIOS内容刷掉（也就是过程有变砖风险，但是自己没出过问题）。<br>中途会提示你插入一个u盘备份你的BIOS，照做吧。<br>一路提示，输入y之后，显示等待下载，一直等就刷好了。<br>实际测试这个服务器不是很稳定，万一下不好的话，换个网试试，或者局域网梯子，再从chrome浏览器里用1080端口代理过去。</p>
+<p>根据脚本提示内容，选择install/update full rom firmware，即会彻底把cmos芯片里的BIOS内容刷掉（也就是过程有变砖风险，但是自己没出过问题）。<br>中途会提示你插入一个u盘备份你的BIOS，照做吧。<br>一路提示，输入y之后，显示等待下载，一直等就刷好了。<br>实际测试这个服务器不是很稳定，万一下不好的话，换个网试试，或者局域网梯子，再从chrome浏览器里用1080端口代理过去。</p>
 <img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4mw5eaj30i70b8whl.jpg">
 
 <h2 id="5-使用U盘装系统"><a href="#5-使用U盘装系统" class="headerlink" title="5.使用U盘装系统"></a>5.使用U盘装系统</h2><p><strong>方法1</strong>：插pe和带有镜像的u盘进去装，适用windows。<br><strong>方法2</strong>：用写盘工具制作启动盘刷机，适用windows和各种发行版Linux。大多数Linux甚至可以直接在u盘上跑系统即live系统。<br><strong>步骤</strong><br><strong>1.</strong>开机几秒内显示兔子界时按下esc，类似一般商用电脑的进入BIOS的F1键的功能。<br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4r2wjxj30xc0m80sx.jpg"></p>
@@ -653,9 +656,9 @@
 <img width="400" src="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7giesj6yej31400u0qv5.jpg">
 <br> <br>
 <img width="400" src="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gieznn2vj31400u0u0x.jpg">
-<br> <br>
-**2.**最后晒一下自己的新电脑，Pixel2015，Linus最爱的两台电脑之一
 
+
+<p><strong>2.</strong>最后晒一下自己的新电脑，Pixel2015，Linus最爱的两台电脑之一</p>
 <img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5cnwi9j31120rs0uz.jpg">
 <br> <br>
 <img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5glhzwj31120rs77c.jpg">
@@ -710,9 +713,6 @@
 
 
 
-<!-- 目录内容 -->
-     
-<!-- 目录内容结束 -->
   
     <article id="post-Hackintosh" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -732,6 +732,9 @@
         
       </header>
     
+	
+	     
+	
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><p><strong>问1.Hackintosh简介</strong><br>答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh</p>
@@ -848,9 +851,6 @@
 
 
 
-<!-- 目录内容 -->
-     
-<!-- 目录内容结束 -->
   
   
 
@@ -937,15 +937,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-Awards</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">-CV</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">-Computer Hardware</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">-Portfolio</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -953,7 +949,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">-Awards</a>
+                <a href="javascript:void(0)" class="js-tag color1">-Portfolio</a>
               </li>
             
             <div class="clearfix"></div>

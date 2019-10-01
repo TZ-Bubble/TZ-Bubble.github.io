@@ -203,6 +203,33 @@
         
       </header>
     
+	
+	
+  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+  <span class="btn-bg"></span>
+  <span class="btn-text"> 📌 </span>
+  </p>
+  <div id="toc-article" class="toc-article">
+      <span id="toc-close" class="toc-close" title="Hide" onclick="showBtn();">×</span>
+      <strong class="toc-title">Article Directory</strong>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Temperature-Control-Box-2017"><span class="toc-number">1.</span> <span class="toc-text">Temperature Control Box (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tracking-Control-and-Obstacle-Avoidance-Car-2017"><span class="toc-number">2.</span> <span class="toc-text">Tracking Control and Obstacle Avoidance Car (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Wind-Board-Angle-Control-System-2017"><span class="toc-number">3.</span> <span class="toc-text">Wind Board Angle Control System (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Rotating-Inverted-Pendulum-2017"><span class="toc-number">4.</span> <span class="toc-text">Rotating Inverted Pendulum (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tracking-Four-Rotor-Aircraft-2017"><span class="toc-number">5.</span> <span class="toc-text">Tracking Four-Rotor Aircraft (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#FPGA-Electronic-Piano-2018"><span class="toc-number">6.</span> <span class="toc-text">FPGA Electronic Piano (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Raspberry-Pi-Monitoring-Vehicle-2018"><span class="toc-number">7.</span> <span class="toc-text">Raspberry Pi Monitoring Vehicle (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Gesture-Recognition-Device-by-Capacitive-Sensor-2018"><span class="toc-number">8.</span> <span class="toc-text">Gesture Recognition Device(by Capacitive Sensor)(2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Wind-Pendulum-2018"><span class="toc-number">9.</span> <span class="toc-text">Wind Pendulum (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Plate-Ball-Control-Device-2018"><span class="toc-number">10.</span> <span class="toc-text">Plate Ball Control Device (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Multisensor-Environmental-Monitoring-Device-2019"><span class="toc-number">11.</span> <span class="toc-text">Multisensor Environmental Monitoring Device (2019)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Wireless-Charging-Wall-Climbing-Car-2019"><span class="toc-number">12.</span> <span class="toc-text">Wireless Charging Wall Climbing Car (2019)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Position-Detection-Device-of-Linear-Motor-Based-on-Hall-Sensor-2019"><span class="toc-number">13.</span> <span class="toc-text">Position Detection Device of Linear Motor Based on Hall Sensor (2019)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Smart-Portable-IoT-Medicine-Box-2019-Device-Server-APP"><span class="toc-number">14.</span> <span class="toc-text">Smart Portable IoT Medicine Box (2019)(Device+Server+APP)</span></a></li></ol>
+ </div>
+ <script type="text/javascript">
+  function showToc(){
+      var toc_article = document.getElementById("toc-article");
+      var show_toc_btn = document.getElementById("show-toc-btn");
+      toc_article.setAttribute("style","display:block");
+      show_toc_btn.setAttribute("style","display:none");
+      };
+  function showBtn(){
+      var toc_article = document.getElementById("toc-article");
+      var show_toc_btn = document.getElementById("show-toc-btn");
+      toc_article.setAttribute("style","display:none");
+      show_toc_btn.setAttribute("style","display:block");
+      };
+ </script>
+     
+	
     <div class="article-entry" itemprop="articleBody">
       
         <img width="400" src="http://wx4.sinaimg.cn/mw690/006tqVdYly1g7d0bk68ztj30ff08pmxy.jpg">  
@@ -324,19 +351,6 @@
         </div>
         
         
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Temperature-Control-Box-2017"><span class="toc-number">1.</span> <span class="toc-text">Temperature Control Box (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tracking-Control-and-Obstacle-Avoidance-Car-2017"><span class="toc-number">2.</span> <span class="toc-text">Tracking Control and Obstacle Avoidance Car (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Wind-Board-Angle-Control-System-2017"><span class="toc-number">3.</span> <span class="toc-text">Wind Board Angle Control System (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Rotating-Inverted-Pendulum-2017"><span class="toc-number">4.</span> <span class="toc-text">Rotating Inverted Pendulum (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tracking-Four-Rotor-Aircraft-2017"><span class="toc-number">5.</span> <span class="toc-text">Tracking Four-Rotor Aircraft (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#FPGA-Electronic-Piano-2018"><span class="toc-number">6.</span> <span class="toc-text">FPGA Electronic Piano (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Raspberry-Pi-Monitoring-Vehicle-2018"><span class="toc-number">7.</span> <span class="toc-text">Raspberry Pi Monitoring Vehicle (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Gesture-Recognition-Device-by-Capacitive-Sensor-2018"><span class="toc-number">8.</span> <span class="toc-text">Gesture Recognition Device(by Capacitive Sensor)(2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Wind-Pendulum-2018"><span class="toc-number">9.</span> <span class="toc-text">Wind Pendulum (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Plate-Ball-Control-Device-2018"><span class="toc-number">10.</span> <span class="toc-text">Plate Ball Control Device (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Multisensor-Environmental-Monitoring-Device-2019"><span class="toc-number">11.</span> <span class="toc-text">Multisensor Environmental Monitoring Device (2019)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Wireless-Charging-Wall-Climbing-Car-2019"><span class="toc-number">12.</span> <span class="toc-text">Wireless Charging Wall Climbing Car (2019)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Position-Detection-Device-of-Linear-Motor-Based-on-Hall-Sensor-2019"><span class="toc-number">13.</span> <span class="toc-text">Position Detection Device of Linear Motor Based on Hall Sensor (2019)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Smart-Portable-IoT-Medicine-Box-2019-Device-Server-APP"><span class="toc-number">14.</span> <span class="toc-text">Smart Portable IoT Medicine Box (2019)(Device+Server+APP)</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
     </div>
 </aside>
 
@@ -353,33 +367,6 @@
   
 
 
-<!-- 目录内容 -->
-
-  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
-  <span class="btn-bg"></span>
-  <span class="btn-text">文章导航</span>
-  </p>
-  <div id="toc-article" class="toc-article">
-      <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
-      <strong class="toc-title">文章目录</strong>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Temperature-Control-Box-2017"><span class="toc-number">1.</span> <span class="toc-text">Temperature Control Box (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tracking-Control-and-Obstacle-Avoidance-Car-2017"><span class="toc-number">2.</span> <span class="toc-text">Tracking Control and Obstacle Avoidance Car (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Wind-Board-Angle-Control-System-2017"><span class="toc-number">3.</span> <span class="toc-text">Wind Board Angle Control System (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Rotating-Inverted-Pendulum-2017"><span class="toc-number">4.</span> <span class="toc-text">Rotating Inverted Pendulum (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tracking-Four-Rotor-Aircraft-2017"><span class="toc-number">5.</span> <span class="toc-text">Tracking Four-Rotor Aircraft (2017)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#FPGA-Electronic-Piano-2018"><span class="toc-number">6.</span> <span class="toc-text">FPGA Electronic Piano (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Raspberry-Pi-Monitoring-Vehicle-2018"><span class="toc-number">7.</span> <span class="toc-text">Raspberry Pi Monitoring Vehicle (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Gesture-Recognition-Device-by-Capacitive-Sensor-2018"><span class="toc-number">8.</span> <span class="toc-text">Gesture Recognition Device(by Capacitive Sensor)(2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Wind-Pendulum-2018"><span class="toc-number">9.</span> <span class="toc-text">Wind Pendulum (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Plate-Ball-Control-Device-2018"><span class="toc-number">10.</span> <span class="toc-text">Plate Ball Control Device (2018)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Multisensor-Environmental-Monitoring-Device-2019"><span class="toc-number">11.</span> <span class="toc-text">Multisensor Environmental Monitoring Device (2019)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Wireless-Charging-Wall-Climbing-Car-2019"><span class="toc-number">12.</span> <span class="toc-text">Wireless Charging Wall Climbing Car (2019)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Position-Detection-Device-of-Linear-Motor-Based-on-Hall-Sensor-2019"><span class="toc-number">13.</span> <span class="toc-text">Position Detection Device of Linear Motor Based on Hall Sensor (2019)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Smart-Portable-IoT-Medicine-Box-2019-Device-Server-APP"><span class="toc-number">14.</span> <span class="toc-text">Smart Portable IoT Medicine Box (2019)(Device+Server+APP)</span></a></li></ol>
- </div>
- <script type="text/javascript">
-  function showToc(){
-      var toc_article = document.getElementById("toc-article");
-      var show_toc_btn = document.getElementById("show-toc-btn");
-      toc_article.setAttribute("style","display:block");
-      show_toc_btn.setAttribute("style","display:none");
-      };
-  function showBtn(){
-      var toc_article = document.getElementById("toc-article");
-      var show_toc_btn = document.getElementById("show-toc-btn");
-      toc_article.setAttribute("style","display:none");
-      show_toc_btn.setAttribute("style","display:block");
-      };
- </script>
-     
-<!-- 目录内容结束 -->
           </div>
         </div>
       </div>
@@ -462,15 +449,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-Awards</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">-CV</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">-Computer Hardware</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">-Portfolio</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -478,7 +461,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">-Awards</a>
+                <a href="javascript:void(0)" class="js-tag color1">-Portfolio</a>
               </li>
             
             <div class="clearfix"></div>

@@ -187,6 +187,33 @@
         
       </header>
     
+	
+	
+  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+  <span class="btn-bg"></span>
+  <span class="btn-text"> 📌 </span>
+  </p>
+  <div id="toc-article" class="toc-article">
+      <span id="toc-close" class="toc-close" title="Hide" onclick="showBtn();">×</span>
+      <strong class="toc-title">Article Directory</strong>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#FAQ："><span class="toc-number">1.</span> <span class="toc-text">FAQ：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#几个常用网站"><span class="toc-number">2.</span> <span class="toc-text">几个常用网站</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#具体步骤："><span class="toc-number">3.</span> <span class="toc-text">具体步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-前期工作："><span class="toc-number">3.1.</span> <span class="toc-text">1.前期工作：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-制作Mac-OS系统盘："><span class="toc-number">3.2.</span> <span class="toc-text">2.制作Mac OS系统盘：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-mac系统安装，并使用u盘进行引导"><span class="toc-number">3.3.</span> <span class="toc-text">3.mac系统安装，并使用u盘进行引导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-进入系统修改磁盘EFI文件"><span class="toc-number">3.4.</span> <span class="toc-text">4.进入系统修改磁盘EFI文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-后续工作"><span class="toc-number">3.5.</span> <span class="toc-text">5.后续工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-成果"><span class="toc-number">3.6.</span> <span class="toc-text">6.成果</span></a></li></ol></li></ol>
+ </div>
+ <script type="text/javascript">
+  function showToc(){
+      var toc_article = document.getElementById("toc-article");
+      var show_toc_btn = document.getElementById("show-toc-btn");
+      toc_article.setAttribute("style","display:block");
+      show_toc_btn.setAttribute("style","display:none");
+      };
+  function showBtn(){
+      var toc_article = document.getElementById("toc-article");
+      var show_toc_btn = document.getElementById("show-toc-btn");
+      toc_article.setAttribute("style","display:none");
+      show_toc_btn.setAttribute("style","display:block");
+      };
+ </script>
+     
+	
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="FAQ："><a href="#FAQ：" class="headerlink" title="FAQ："></a>FAQ：</h1><p><strong>问1.Hackintosh简介</strong><br>答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh</p>
@@ -309,19 +336,6 @@
         </div>
         
         
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#FAQ："><span class="toc-number">1.</span> <span class="toc-text">FAQ：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#几个常用网站"><span class="toc-number">2.</span> <span class="toc-text">几个常用网站</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#具体步骤："><span class="toc-number">3.</span> <span class="toc-text">具体步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-前期工作："><span class="toc-number">3.1.</span> <span class="toc-text">1.前期工作：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-制作Mac-OS系统盘："><span class="toc-number">3.2.</span> <span class="toc-text">2.制作Mac OS系统盘：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-mac系统安装，并使用u盘进行引导"><span class="toc-number">3.3.</span> <span class="toc-text">3.mac系统安装，并使用u盘进行引导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-进入系统修改磁盘EFI文件"><span class="toc-number">3.4.</span> <span class="toc-text">4.进入系统修改磁盘EFI文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-后续工作"><span class="toc-number">3.5.</span> <span class="toc-text">5.后续工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-成果"><span class="toc-number">3.6.</span> <span class="toc-text">6.成果</span></a></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
     </div>
 </aside>
 
@@ -338,33 +352,6 @@
   
 
 
-<!-- 目录内容 -->
-
-  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
-  <span class="btn-bg"></span>
-  <span class="btn-text">文章导航</span>
-  </p>
-  <div id="toc-article" class="toc-article">
-      <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
-      <strong class="toc-title">文章目录</strong>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#FAQ："><span class="toc-number">1.</span> <span class="toc-text">FAQ：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#几个常用网站"><span class="toc-number">2.</span> <span class="toc-text">几个常用网站</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#具体步骤："><span class="toc-number">3.</span> <span class="toc-text">具体步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-前期工作："><span class="toc-number">3.1.</span> <span class="toc-text">1.前期工作：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-制作Mac-OS系统盘："><span class="toc-number">3.2.</span> <span class="toc-text">2.制作Mac OS系统盘：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-mac系统安装，并使用u盘进行引导"><span class="toc-number">3.3.</span> <span class="toc-text">3.mac系统安装，并使用u盘进行引导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-进入系统修改磁盘EFI文件"><span class="toc-number">3.4.</span> <span class="toc-text">4.进入系统修改磁盘EFI文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-后续工作"><span class="toc-number">3.5.</span> <span class="toc-text">5.后续工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-成果"><span class="toc-number">3.6.</span> <span class="toc-text">6.成果</span></a></li></ol></li></ol>
- </div>
- <script type="text/javascript">
-  function showToc(){
-      var toc_article = document.getElementById("toc-article");
-      var show_toc_btn = document.getElementById("show-toc-btn");
-      toc_article.setAttribute("style","display:block");
-      show_toc_btn.setAttribute("style","display:none");
-      };
-  function showBtn(){
-      var toc_article = document.getElementById("toc-article");
-      var show_toc_btn = document.getElementById("show-toc-btn");
-      toc_article.setAttribute("style","display:none");
-      show_toc_btn.setAttribute("style","display:block");
-      };
- </script>
-     
-<!-- 目录内容结束 -->
           </div>
         </div>
       </div>
@@ -447,15 +434,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-Awards</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">-CV</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">-Computer Hardware</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">-Portfolio</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -463,7 +446,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">-Awards</a>
+                <a href="javascript:void(0)" class="js-tag color1">-Portfolio</a>
               </li>
             
             <div class="clearfix"></div>
