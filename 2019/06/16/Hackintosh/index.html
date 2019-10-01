@@ -9,7 +9,7 @@
   <title>Hackintosh（笔记本电脑黑苹果）安装步骤（以thinkpad x220笔记本为例） | Pan.yp&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="FAQ：问1.Hackintosh简介答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论">
-<meta name="keywords" content="-Computer Hardware">
+<meta name="keywords" content="-ComputerHardware">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hackintosh（笔记本电脑黑苹果）安装步骤（以thinkpad x220笔记本为例）">
 <meta property="og:url" content="http://yoursite.com/2019/06/16/Hackintosh/index.html">
@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
 <meta property="og:image" content="http://wx3.sinaimg.cn/mw690/006tqVdYgy1g7gio94f1uj31400u0u0y.jpg">
 <meta property="og:image" content="http://wx3.sinaimg.cn/mw690/006tqVdYgy1g7giommc4ej31hc0u0k84.jpg">
-<meta property="og:updated_time" content="2019-10-01T05:36:01.841Z">
+<meta property="og:updated_time" content="2019-10-01T09:14:02.699Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hackintosh（笔记本电脑黑苹果）安装步骤（以thinkpad x220笔记本为例）">
 <meta name="twitter:description" content="FAQ：问1.Hackintosh简介答：Mac OS是基于UNIX的非常优秀的操作系统。 但是由于苹果笔记本电脑的软硬件闭源，通过一些特殊手段在其他非苹果品牌电脑上安装Mac OS系统被称为黑苹果（与白苹果对应）即Hackintosh 问2.x220机型简介答：thinkpad在被联想收购后，推出了几款较经典的笔记本：x220，x230，t420，t430以其中x220为例，可玩性很高（专门网论">
@@ -64,13 +64,13 @@
 			
 				<li><a href="/">HomePage</a></li>
 	        
-				<li><a href="/tags/CV/">CV</a></li>
+				<li><a href="/2019/09/15/CV/">CV</a></li>
 	        
 				<li><a href="/tags/Portfolio/">Portfolio</a></li>
 	        
-				<li><a href="/tags/Computer Hardware/">Computer Hardware</a></li>
+				<li><a href="/2019/09/18/Awards/">Honours&amp;Awards</a></li>
 	        
-				<li><a href="/tags/Graduation Project/">Graduation Project</a></li>
+				<li><a href="/tags/ComputerHardware/">Computer Hardware</a></li>
 	        
 			</ul>
 		</nav>
@@ -78,6 +78,10 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">Articles</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">A poem</a>
     			
             
 		</nav>
@@ -144,13 +148,13 @@
 				
 					<li style="width: 20%"><a href="/">HomePage</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/CV/">CV</a></li>
+					<li style="width: 20%"><a href="/2019/09/15/CV/">CV</a></li>
 		        
 					<li style="width: 20%"><a href="/tags/Portfolio/">Portfolio</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/Computer Hardware/">Computer Hardware</a></li>
+					<li style="width: 20%"><a href="/2019/09/18/Awards/">Honours&amp;Awards</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/Graduation Project/">Graduation Project</a></li>
+					<li style="width: 20%"><a href="/tags/ComputerHardware/">Computer Hardware</a></li>
 		        
 				</ul>
 			</nav>
@@ -207,11 +211,11 @@
 <p><strong>2.</strong> <a href="https://blog.daliansky.net/" target="_blank" rel="noopener">blog.daliansky.net/</a><br>黑果小兵，有各类Hackintosh资源和实用教程</p>
 <p><strong>3.</strong> <a href="https://forum.51nb.com" target="_blank" rel="noopener">forum.51nb.com</a><br>51nb即专门网，一个thinkpad以及图形工作站等笔记本电脑硬件交流网站</p>
 <hr>
-<h1 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h1><h4 id="1-前期工作："><a href="#1-前期工作：" class="headerlink" title="1.前期工作："></a>1.前期工作：</h4><ul>
+<h1 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h1><h2 id="1-前期工作："><a href="#1-前期工作：" class="headerlink" title="1.前期工作："></a>1.前期工作：</h2><ul>
 <li>准备材料：多个U盘（制作PE，镜像安装盘等）,1台x220电脑,1台其他电脑</li>
 <li>最好单独预留一整块物理磁盘预装Mac OS系统</li>
 </ul>
-<h4 id="2-制作Mac-OS系统盘："><a href="#2-制作Mac-OS系统盘：" class="headerlink" title="2.制作Mac OS系统盘："></a>2.制作Mac OS系统盘：</h4><p>将黑苹果镜像刻录到U盘，此步在另一台电脑上操作。  </p>
+<h2 id="2-制作Mac-OS系统盘："><a href="#2-制作Mac-OS系统盘：" class="headerlink" title="2.制作Mac OS系统盘："></a>2.制作Mac OS系统盘：</h2><p>将黑苹果镜像刻录到U盘，此步在另一台电脑上操作。  </p>
 <ul>
 <li><p>在此网址下载黑苹果镜像：<br><a href="https://blog.daliansky.net/macOS-Mojave-10.14.4-18E226-official-version-with-Clover-4903-original-image.html" target="_blank" rel="noopener">黑苹果镜像下载地址</a></p>
 </li>
@@ -222,13 +226,13 @@
 <li><p>修改U盘EFI文件<br>将X220的EFI文件拷贝到U盘EFI文件夹：<br><a href="https://github.com/b-ggs/x220-hackintosh" target="_blank" rel="noopener">EFI文件下载地址</a>     <a href="https://blog.csdn.net/jankingmeaning/article/details/85183308#_54" target="_blank" rel="noopener">EFI文件拷贝教程</a></p>
 </li>
 </ul>
-<h4 id="3-mac系统安装，并使用u盘进行引导"><a href="#3-mac系统安装，并使用u盘进行引导" class="headerlink" title="3.mac系统安装，并使用u盘进行引导"></a>3.mac系统安装，并使用u盘进行引导</h4><ul>
+<h2 id="3-mac系统安装，并使用u盘进行引导"><a href="#3-mac系统安装，并使用u盘进行引导" class="headerlink" title="3.mac系统安装，并使用u盘进行引导"></a>3.mac系统安装，并使用u盘进行引导</h2><ul>
 <li>使用系统盘实现Mac OS系统的安装，并通过u盘引导进入：<a href="https://blog.csdn.net/jankingmeaning/article/details/85183308#_54" target="_blank" rel="noopener">系统安装以及U盘引导教程</a></li>
 </ul>
-<h4 id="4-进入系统修改磁盘EFI文件"><a href="#4-进入系统修改磁盘EFI文件" class="headerlink" title="4.进入系统修改磁盘EFI文件"></a>4.进入系统修改磁盘EFI文件</h4><ul>
+<h2 id="4-进入系统修改磁盘EFI文件"><a href="#4-进入系统修改磁盘EFI文件" class="headerlink" title="4.进入系统修改磁盘EFI文件"></a>4.进入系统修改磁盘EFI文件</h2><ul>
 <li>此时Hackintosh系统已安装完毕，但需要依赖U盘引导而无法自引导。故需要修改磁盘的EFI文件实现自引导。  具体内容详见教程中内容——“教你将U盘上的EFI复制到磁盘的EFI分区,脱离USB运行[macOS篇]”：<br><a href="https://blog.daliansky.net/MacOS-installation-tutorial-XiaoMi-Pro-installation-process-records.html" target="_blank" rel="noopener">修改EFI实现自引导教程地址</a></li>
 </ul>
-<h4 id="5-后续工作"><a href="#5-后续工作" class="headerlink" title="5.后续工作"></a>5.后续工作</h4><ul>
+<h2 id="5-后续工作"><a href="#5-后续工作" class="headerlink" title="5.后续工作"></a>5.后续工作</h2><ul>
 <li><p>打开retina，有两种实现方法：<br><a href="https://blog.daliansky.net/Use-HIDPI-to-solve-sleep-wake-up-black-screen,-Huaping-and-connect-the-external-monitor-the-correct-posture.html" target="_blank" rel="noopener">打开retina教程地址</a></p>
 </li>
 <li><p>开启原生SSD Trim功能<br>在终端下运行：</p>
@@ -241,7 +245,7 @@
 <li><p>若要实现双系统：<br><a href="https://blog.csdn.net/jankingmeaning/article/details/85183308#_54" target="_blank" rel="noopener">Win+Mac双系统教程</a></p>
 </li>
 </ul>
-<h4 id="6-成果"><a href="#6-成果" class="headerlink" title="6.成果"></a>6.成果</h4><img width="400" src="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
+<h2 id="6-成果"><a href="#6-成果" class="headerlink" title="6.成果"></a>6.成果</h2><img width="400" src="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gio0tqy5j30u0140u0x.jpg">
 <br> <br>
 <img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYgy1g7gio94f1uj31400u0u0y.jpg">
 <br> <br>
@@ -260,7 +264,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-Computer Hardware</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-ComputerHardware</a>
         		</li>
       		
 		</ul>
@@ -270,57 +274,6 @@
 
       
 
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/06/16/Hackintosh/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
@@ -356,6 +309,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#FAQ："><span class="toc-number">1.</span> <span class="toc-text">FAQ：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#几个常用网站"><span class="toc-number">2.</span> <span class="toc-text">几个常用网站</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#具体步骤："><span class="toc-number">3.</span> <span class="toc-text">具体步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-前期工作："><span class="toc-number">3.1.</span> <span class="toc-text">1.前期工作：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-制作Mac-OS系统盘："><span class="toc-number">3.2.</span> <span class="toc-text">2.制作Mac OS系统盘：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-mac系统安装，并使用u盘进行引导"><span class="toc-number">3.3.</span> <span class="toc-text">3.mac系统安装，并使用u盘进行引导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-进入系统修改磁盘EFI文件"><span class="toc-number">3.4.</span> <span class="toc-text">4.进入系统修改磁盘EFI文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-后续工作"><span class="toc-number">3.5.</span> <span class="toc-text">5.后续工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-成果"><span class="toc-number">3.6.</span> <span class="toc-text">6.成果</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -372,6 +338,33 @@
   
 
 
+<!-- 目录内容 -->
+
+  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+  <span class="btn-bg"></span>
+  <span class="btn-text">文章导航</span>
+  </p>
+  <div id="toc-article" class="toc-article">
+      <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+      <strong class="toc-title">文章目录</strong>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#FAQ："><span class="toc-number">1.</span> <span class="toc-text">FAQ：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#几个常用网站"><span class="toc-number">2.</span> <span class="toc-text">几个常用网站</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#具体步骤："><span class="toc-number">3.</span> <span class="toc-text">具体步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-前期工作："><span class="toc-number">3.1.</span> <span class="toc-text">1.前期工作：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-制作Mac-OS系统盘："><span class="toc-number">3.2.</span> <span class="toc-text">2.制作Mac OS系统盘：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-mac系统安装，并使用u盘进行引导"><span class="toc-number">3.3.</span> <span class="toc-text">3.mac系统安装，并使用u盘进行引导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-进入系统修改磁盘EFI文件"><span class="toc-number">3.4.</span> <span class="toc-text">4.进入系统修改磁盘EFI文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-后续工作"><span class="toc-number">3.5.</span> <span class="toc-text">5.后续工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-成果"><span class="toc-number">3.6.</span> <span class="toc-text">6.成果</span></a></li></ol></li></ol>
+ </div>
+ <script type="text/javascript">
+  function showToc(){
+      var toc_article = document.getElementById("toc-article");
+      var show_toc_btn = document.getElementById("show-toc-btn");
+      toc_article.setAttribute("style","display:block");
+      show_toc_btn.setAttribute("style","display:none");
+      };
+  function showBtn(){
+      var toc_article = document.getElementById("toc-article");
+      var show_toc_btn = document.getElementById("show-toc-btn");
+      toc_article.setAttribute("style","display:none");
+      show_toc_btn.setAttribute("style","display:block");
+      };
+ </script>
+     
+<!-- 目录内容结束 -->
           </div>
         </div>
       </div>
@@ -397,7 +390,7 @@
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
-		toc_hide_index: true,
+		toc_hide_index: false,
 		root: "/",
 		innerArchive: true,
 		showTags: true
@@ -419,13 +412,21 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">Articles</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">Articles</a></li>
+      
+        
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">A poem</a></li>
       
         
     </ul>
@@ -446,15 +447,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">-Computer Hardware</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">-CV</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">-Computer Hardware</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">-Portfolio</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-ComputerHardware</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-Awards</a>
               </li>
             
             <div class="clearfix"></div>
@@ -502,6 +511,12 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">我是没事的时候&lt;br&gt;在无聊的时候&lt;br&gt;想的时候&lt;br&gt;到一个地方&lt;br&gt;不相同的地方&lt;br&gt;到这个地方来&lt;br&gt;来的吧&lt;br&gt;可以瞧一瞧&lt;br&gt;不一样的地方&lt;br&gt;不相同的地方&lt;br&gt;很多很多&lt;br&gt;&lt;br&gt; ——吟游诗人</div>
+  	  	
+    	</section>
     
   </div>
   

@@ -9,7 +9,7 @@
   <title>chromebook刷写BIOS及更换系统步骤（以Dell chromebook 13 7310笔记本为例） | Pan.yp&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="FAQ：问1.Chromebook简介答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。特点是：系统特殊，硬盘非常小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡到过200块一台的），国内存量少（国内环境不适合使用）。问2.为什么要更换系统答：ChromeOS需要在梯子环境下进行激活和下载应用（">
-<meta name="keywords" content="-Computer Hardware">
+<meta name="keywords" content="-ComputerHardware">
 <meta property="og:type" content="article">
 <meta property="og:title" content="chromebook刷写BIOS及更换系统步骤（以Dell chromebook 13 7310笔记本为例）">
 <meta property="og:url" content="http://yoursite.com/2019/07/04/chromebook/index.html">
@@ -27,7 +27,7 @@
 <meta property="og:image" content="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7gieznn2vj31400u0u0x.jpg">
 <meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5cnwi9j31120rs0uz.jpg">
 <meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh5glhzwj31120rs77c.jpg">
-<meta property="og:updated_time" content="2019-10-01T05:35:59.576Z">
+<meta property="og:updated_time" content="2019-10-01T09:13:17.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="chromebook刷写BIOS及更换系统步骤（以Dell chromebook 13 7310笔记本为例）">
 <meta name="twitter:description" content="FAQ：问1.Chromebook简介答：是采用谷歌公司ChromeOS系统的洋垃圾笔记本电脑，该系统完全依赖网络使用，在美国学生里很流行。特点是：系统特殊，硬盘非常小（一般就是16g），洋垃圾（跟着大船来，只有咸鱼买得到），便宜（多在千元内，ARM的CPU的甚至捡到过200块一台的），国内存量少（国内环境不适合使用）。问2.为什么要更换系统答：ChromeOS需要在梯子环境下进行激活和下载应用（">
@@ -72,13 +72,13 @@
 			
 				<li><a href="/">HomePage</a></li>
 	        
-				<li><a href="/tags/CV/">CV</a></li>
+				<li><a href="/2019/09/15/CV/">CV</a></li>
 	        
 				<li><a href="/tags/Portfolio/">Portfolio</a></li>
 	        
-				<li><a href="/tags/Computer Hardware/">Computer Hardware</a></li>
+				<li><a href="/2019/09/18/Awards/">Honours&amp;Awards</a></li>
 	        
-				<li><a href="/tags/Graduation Project/">Graduation Project</a></li>
+				<li><a href="/tags/ComputerHardware/">Computer Hardware</a></li>
 	        
 			</ul>
 		</nav>
@@ -86,6 +86,10 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">Articles</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">A poem</a>
     			
             
 		</nav>
@@ -152,13 +156,13 @@
 				
 					<li style="width: 20%"><a href="/">HomePage</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/CV/">CV</a></li>
+					<li style="width: 20%"><a href="/2019/09/15/CV/">CV</a></li>
 		        
 					<li style="width: 20%"><a href="/tags/Portfolio/">Portfolio</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/Computer Hardware/">Computer Hardware</a></li>
+					<li style="width: 20%"><a href="/2019/09/18/Awards/">Honours&amp;Awards</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/Graduation Project/">Graduation Project</a></li>
+					<li style="width: 20%"><a href="/tags/ComputerHardware/">Computer Hardware</a></li>
 		        
 				</ul>
 			</nav>
@@ -197,15 +201,15 @@
 <h1 id="几个常用网站"><a href="#几个常用网站" class="headerlink" title="几个常用网站"></a>几个常用网站</h1><p><strong>1.</strong> <a href="http://www.mrchromebox.tech" target="_blank" rel="noopener">mrchromebox.tech</a><br>主要介绍各种chromebook的BIOS固件支持和刷机流程。</p>
 <p><strong>2.</strong><a href="https://coolstar.org/chromebook" target="_blank" rel="noopener">coolstar.org/chromebook</a><br>各种Chromebook笔记本在Windows下面的驱动可以找到，有些Windows下硬件无法驱动的硬件也会有提及。</p>
 <p><strong>3.</strong><a href="http://www.github.com/dnschneid/crouton" target="_blank" rel="noopener">github.com/dnschneid/crouton</a><br>crouton是一个ChromeOS内的Linux容器，可以在保留原生系统情况下安装其他发行版本Linux，仍然需要进入开发者模式，但没有实际操作过。</p>
-<h1 id="刷机步骤："><a href="#刷机步骤：" class="headerlink" title="刷机步骤："></a>刷机步骤：</h1><h3 id="1-卸读写保护螺丝"><a href="#1-卸读写保护螺丝" class="headerlink" title="1.卸读写保护螺丝"></a>1.卸读写保护螺丝</h3><p><strong>1.</strong>拆D面后盖，拧一大堆螺丝就行了，注意要用力，别拧滑丝了。<br><strong>2.</strong>拧开后，卸写保护螺丝（螺丝旁写了WP，在靠近电源口位置），这个螺丝很紧，要用力别滑丝了，螺丝外观和机内其他的没有明显区别，卸掉可以看到主板上的一圈裸露的触点。建议先断开电池供电，防止螺丝掉在主板上烧主板（我就把主板弄冒烟过）。<br><strong>3.</strong>卸完可以根据需要更换2242接口的ssd，咸鱼上有不明来路的但是用着没出问题。<br><strong>4.</strong>换好就没硬件上什么事情了，可以装回D面拧螺丝了。</p>
+<h1 id="刷机步骤："><a href="#刷机步骤：" class="headerlink" title="刷机步骤："></a>刷机步骤：</h1><h2 id="1-卸读写保护螺丝"><a href="#1-卸读写保护螺丝" class="headerlink" title="1.卸读写保护螺丝"></a>1.卸读写保护螺丝</h2><p><strong>1.</strong>拆D面后盖，拧一大堆螺丝就行了，注意要用力，别拧滑丝了。<br><strong>2.</strong>拧开后，卸写保护螺丝（螺丝旁写了WP，在靠近电源口位置），这个螺丝很紧，要用力别滑丝了，螺丝外观和机内其他的没有明显区别，卸掉可以看到主板上的一圈裸露的触点。建议先断开电池供电，防止螺丝掉在主板上烧主板（我就把主板弄冒烟过）。<br><strong>3.</strong>卸完可以根据需要更换2242接口的ssd，咸鱼上有不明来路的但是用着没出问题。<br><strong>4.</strong>换好就没硬件上什么事情了，可以装回D面拧螺丝了。</p>
 <p><strong>PS:</strong>这款垃圾电脑就是能换ssd所以才好用。不换的话，可以用tf卡扩展，16GB硬盘可以装比较小的Linux发行版或者俄罗斯大神的精简Win10。</p>
 <img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh289d7uj30g40c33zr.jpg">
 
 
-<h3 id="2-开始开发者模式"><a href="#2-开始开发者模式" class="headerlink" title="2.开始开发者模式"></a>2.开始开发者模式</h3><p><strong>1.</strong>完全关机，保证电量够刷机。<br><strong>2.</strong>按电源键+esc+刷新键(第1排左到右第4个键，就是对应一般电脑的F4键)，可以进入开发者模式。<br><strong>3.</strong>按ctrl+d跳系统警告。<br><strong>4.</strong>按回车键关闭系统验证。<br><strong>5.</strong>重新启动按ctrl+d跳系统警告，可能需多按几次，不要按空格，按了就恢复回去了。。<br><strong>6.</strong>等待系统自动会部署开发者模式环境，等进度条跑完。<br><strong>7.</strong>自动重启后，可以使用ctrl+alt+后退键（F2位置键）和 ctrl+alt+前进键（F3位置键）切换当前桌面和控制台（类似Linux），确认开发者模式已经打开。</p>
+<h2 id="2-开始开发者模式"><a href="#2-开始开发者模式" class="headerlink" title="2.开始开发者模式"></a>2.开始开发者模式</h2><p><strong>1.</strong>完全关机，保证电量够刷机。<br><strong>2.</strong>按电源键+esc+刷新键(第1排左到右第4个键，就是对应一般电脑的F4键)，可以进入开发者模式。<br><strong>3.</strong>按ctrl+d跳系统警告。<br><strong>4.</strong>按回车键关闭系统验证。<br><strong>5.</strong>重新启动按ctrl+d跳系统警告，可能需多按几次，不要按空格，按了就恢复回去了。。<br><strong>6.</strong>等待系统自动会部署开发者模式环境，等进度条跑完。<br><strong>7.</strong>自动重启后，可以使用ctrl+alt+后退键（F2位置键）和 ctrl+alt+前进键（F3位置键）切换当前桌面和控制台（类似Linux），确认开发者模式已经打开。</p>
 <img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4cv7qfj31400u04qs.jpg">
 
-<h3 id="3-关闭系统写保护"><a href="#3-关闭系统写保护" class="headerlink" title="3.关闭系统写保护"></a>3.关闭系统写保护</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>确定写保护螺丝已拆，输入以下命令解除写入限制。</p>
+<h2 id="3-关闭系统写保护"><a href="#3-关闭系统写保护" class="headerlink" title="3.关闭系统写保护"></a>3.关闭系统写保护</h2><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>确定写保护螺丝已拆，输入以下命令解除写入限制。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification</span><br></pre></td></tr></table></figure>
 
 <p>执行上述命令后后会输出 –partition X，执行下一句，并且将X换成输出的数字</p>
@@ -214,17 +218,16 @@
 <p>（X 代表数字，前一命令若返回4，就输入–partition 4，见下图）<br><strong>5.</strong>重启设备让文件系统更改生效，这个shell里reboot和shutdown都不行。。手动关机吧。</p>
 <img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYly1g5nh4ijdh5j30g406rjuv.jpg">
 
-<h3 id="4-刷Mrchromebox的BIOS"><a href="#4-刷Mrchromebox的BIOS" class="headerlink" title="4.刷Mrchromebox的BIOS"></a>4.刷Mrchromebox的BIOS</h3><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>输入sudo bash，会出现红色的local host命令前缀，这时类似进入了root用户。<br>实际如果输入su root后也不知道密码默认多少，说明这是个类Linux的shell，使用有一些区别。<br><strong>5.</strong>输入以下脚本开始刷mrchromebox的BIOS。</p>
+<h2 id="4-刷Mrchromebox的BIOS"><a href="#4-刷Mrchromebox的BIOS" class="headerlink" title="4.刷Mrchromebox的BIOS"></a>4.刷Mrchromebox的BIOS</h2><p><strong>1.</strong>进入系统，考虑进开发者模式后恢复未激活状态。这个系统翻墙麻烦，直接选browse as guest（即等待滚动时，选择左下角的访客模式）。<br><strong>2.</strong>浏览器里打开控制台Ctrl+Alt+T。<br><strong>3.</strong>输入Shell进入终端，会出现绿色的local host命令前缀。<br><strong>4.</strong>输入sudo bash，会出现红色的local host命令前缀，这时类似进入了root用户。<br>实际如果输入su root后也不知道密码默认多少，说明这是个类Linux的shell，使用有一些区别。<br><strong>5.</strong>输入以下脚本开始刷mrchromebox的BIOS。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd; curl -LO https://mrchromebox.tech/firmware-util.sh &amp;&amp; sudo bash firmware-util.sh</span><br></pre></td></tr></table></figure>
 
 <p>跟据脚本提示内容，选择install/update full rom firmware，即会彻底把cmos芯片里的BIOS内容刷掉（也就是过程有变砖风险，但是自己没出过问题）。<br>中途会提示你插入一个u盘备份你的BIOS，照做吧。<br>一路提示，输入y之后，显示等待下载，一直等就刷好了。<br>实际测试这个服务器不是很稳定，万一下不好的话，换个网试试，或者局域网梯子，再从chrome浏览器里用1080端口代理过去。</p>
 <img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4mw5eaj30i70b8whl.jpg">
 
-<h3 id="5-使用U盘装系统"><a href="#5-使用U盘装系统" class="headerlink" title="5.使用U盘装系统"></a>5.使用U盘装系统</h3><p><strong>方法1</strong>：插pe和带有镜像的u盘进去装，适用windows。<br><strong>方法2</strong>：用写盘工具制作启动盘刷机，适用windows和各种发行版Linux。大多数Linux甚至可以直接在u盘上跑系统即live系统。</p>
-<h4 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h4><p><strong>1.</strong>开机几秒内显示兔子界时按下esc，类似一般商用电脑的进入BIOS的F1键的功能。<br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4r2wjxj30xc0m80sx.jpg"></p>
+<h2 id="5-使用U盘装系统"><a href="#5-使用U盘装系统" class="headerlink" title="5.使用U盘装系统"></a>5.使用U盘装系统</h2><p><strong>方法1</strong>：插pe和带有镜像的u盘进去装，适用windows。<br><strong>方法2</strong>：用写盘工具制作启动盘刷机，适用windows和各种发行版Linux。大多数Linux甚至可以直接在u盘上跑系统即live系统。<br><strong>步骤</strong><br><strong>1.</strong>开机几秒内显示兔子界时按下esc，类似一般商用电脑的进入BIOS的F1键的功能。<br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4r2wjxj30xc0m80sx.jpg"></p>
 <p><strong>2.</strong>进入后选择Boot Manager，选择启动u盘的对应选项。<br><img width="400" src="http://wx1.sinaimg.cn/mw690/006tqVdYly1g5nh4w7qraj30xc0m8e81.jpg"></p>
 <p><strong>3.</strong>剩余流程和一般做系统流程类似，不赘诉。做好系统后从兔子界面就能自动进系统了。需要多系统启动则需基于Linux的grub。<br><strong>4.</strong>如果是装Win10，装的时候要外接鼠标，开机后去coolstar的网站上装驱动即可，主要是触摸板驱动。<br><strong>5.</strong>该机装其他Linux，Manjaro驱动完美，CentOS和Win10类似。总结就是Win10（自己装驱动后）和某些兼容好的Linux下面驱动完美。</p>
-<h3 id="6-成果"><a href="#6-成果" class="headerlink" title="6.成果"></a>6.成果</h3><p><strong>1.</strong>以下分别将Dell Chromebook 13刷成了Centos，Windows，Manjaro系统。</p>
+<h2 id="6-成果"><a href="#6-成果" class="headerlink" title="6.成果"></a>6.成果</h2><p><strong>1.</strong>以下分别将Dell Chromebook 13刷成了Centos，Windows，Manjaro系统。</p>
 <img width="400" src="http://wx3.sinaimg.cn/mw690/006tqVdYgy1g7gif8fmt6j31400u0u0x.jpg">
 <br> <br>
 <img width="400" src="http://wx2.sinaimg.cn/mw690/006tqVdYgy1g7giesj6yej31400u0qv5.jpg">
@@ -248,7 +251,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-Computer Hardware</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-ComputerHardware</a>
         		</li>
       		
 		</ul>
@@ -258,57 +261,6 @@
 
       
 
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/04/chromebook/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
@@ -349,6 +301,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#FAQ："><span class="toc-number">1.</span> <span class="toc-text">FAQ：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#几个常用网站"><span class="toc-number">2.</span> <span class="toc-text">几个常用网站</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#刷机步骤："><span class="toc-number">3.</span> <span class="toc-text">刷机步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-卸读写保护螺丝"><span class="toc-number">3.1.</span> <span class="toc-text">1.卸读写保护螺丝</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-开始开发者模式"><span class="toc-number">3.2.</span> <span class="toc-text">2.开始开发者模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-关闭系统写保护"><span class="toc-number">3.3.</span> <span class="toc-text">3.关闭系统写保护</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-刷Mrchromebox的BIOS"><span class="toc-number">3.4.</span> <span class="toc-text">4.刷Mrchromebox的BIOS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-使用U盘装系统"><span class="toc-number">3.5.</span> <span class="toc-text">5.使用U盘装系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-成果"><span class="toc-number">3.6.</span> <span class="toc-text">6.成果</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -365,6 +330,33 @@
   
 
 
+<!-- 目录内容 -->
+
+  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+  <span class="btn-bg"></span>
+  <span class="btn-text">文章导航</span>
+  </p>
+  <div id="toc-article" class="toc-article">
+      <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+      <strong class="toc-title">文章目录</strong>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#FAQ："><span class="toc-number">1.</span> <span class="toc-text">FAQ：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#几个常用网站"><span class="toc-number">2.</span> <span class="toc-text">几个常用网站</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#刷机步骤："><span class="toc-number">3.</span> <span class="toc-text">刷机步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-卸读写保护螺丝"><span class="toc-number">3.1.</span> <span class="toc-text">1.卸读写保护螺丝</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-开始开发者模式"><span class="toc-number">3.2.</span> <span class="toc-text">2.开始开发者模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-关闭系统写保护"><span class="toc-number">3.3.</span> <span class="toc-text">3.关闭系统写保护</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-刷Mrchromebox的BIOS"><span class="toc-number">3.4.</span> <span class="toc-text">4.刷Mrchromebox的BIOS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-使用U盘装系统"><span class="toc-number">3.5.</span> <span class="toc-text">5.使用U盘装系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-成果"><span class="toc-number">3.6.</span> <span class="toc-text">6.成果</span></a></li></ol></li></ol>
+ </div>
+ <script type="text/javascript">
+  function showToc(){
+      var toc_article = document.getElementById("toc-article");
+      var show_toc_btn = document.getElementById("show-toc-btn");
+      toc_article.setAttribute("style","display:block");
+      show_toc_btn.setAttribute("style","display:none");
+      };
+  function showBtn(){
+      var toc_article = document.getElementById("toc-article");
+      var show_toc_btn = document.getElementById("show-toc-btn");
+      toc_article.setAttribute("style","display:none");
+      show_toc_btn.setAttribute("style","display:block");
+      };
+ </script>
+     
+<!-- 目录内容结束 -->
           </div>
         </div>
       </div>
@@ -390,7 +382,7 @@
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
-		toc_hide_index: true,
+		toc_hide_index: false,
 		root: "/",
 		innerArchive: true,
 		showTags: true
@@ -412,13 +404,21 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">Articles</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">Articles</a></li>
+      
+        
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">A poem</a></li>
       
         
     </ul>
@@ -439,15 +439,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">-Computer Hardware</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">-CV</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">-Computer Hardware</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">-Portfolio</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-ComputerHardware</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-Awards</a>
               </li>
             
             <div class="clearfix"></div>
@@ -495,6 +503,12 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">我是没事的时候&lt;br&gt;在无聊的时候&lt;br&gt;想的时候&lt;br&gt;到一个地方&lt;br&gt;不相同的地方&lt;br&gt;到这个地方来&lt;br&gt;来的吧&lt;br&gt;可以瞧一瞧&lt;br&gt;不一样的地方&lt;br&gt;不相同的地方&lt;br&gt;很多很多&lt;br&gt;&lt;br&gt; ——吟游诗人</div>
+  	  	
+    	</section>
     
   </div>
   

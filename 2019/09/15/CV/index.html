@@ -57,13 +57,13 @@
 			
 				<li><a href="/">HomePage</a></li>
 	        
-				<li><a href="/tags/CV/">CV</a></li>
+				<li><a href="/2019/09/15/CV/">CV</a></li>
 	        
 				<li><a href="/tags/Portfolio/">Portfolio</a></li>
 	        
-				<li><a href="/tags/Computer Hardware/">Computer Hardware</a></li>
+				<li><a href="/2019/09/18/Awards/">Honours&amp;Awards</a></li>
 	        
-				<li><a href="/tags/Graduation Project/">Graduation Project</a></li>
+				<li><a href="/tags/ComputerHardware/">Computer Hardware</a></li>
 	        
 			</ul>
 		</nav>
@@ -71,6 +71,10 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">Articles</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">A poem</a>
     			
             
 		</nav>
@@ -137,13 +141,13 @@
 				
 					<li style="width: 20%"><a href="/">HomePage</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/CV/">CV</a></li>
+					<li style="width: 20%"><a href="/2019/09/15/CV/">CV</a></li>
 		        
 					<li style="width: 20%"><a href="/tags/Portfolio/">Portfolio</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/Computer Hardware/">Computer Hardware</a></li>
+					<li style="width: 20%"><a href="/2019/09/18/Awards/">Honours&amp;Awards</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/Graduation Project/">Graduation Project</a></li>
+					<li style="width: 20%"><a href="/tags/ComputerHardware/">Computer Hardware</a></li>
 		        
 				</ul>
 			</nav>
@@ -210,57 +214,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/15/CV/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -269,11 +222,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/20/Some Electronic Designs by Yipeng Pan/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/09/18/Awards/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Some Electronic Designs by Yipeng Pan
+          Honours&amp;Awards
         
       </div>
     </a>
@@ -316,6 +269,9 @@
   
 
 
+<!-- 目录内容 -->
+     
+<!-- 目录内容结束 -->
           </div>
         </div>
       </div>
@@ -341,7 +297,7 @@
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
-		toc_hide_index: true,
+		toc_hide_index: false,
 		root: "/",
 		innerArchive: true,
 		showTags: true
@@ -363,13 +319,21 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">Articles</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">Articles</a></li>
+      
+        
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">A poem</a></li>
       
         
     </ul>
@@ -390,15 +354,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">-Computer Hardware</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">-CV</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">-Computer Hardware</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">-Portfolio</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-ComputerHardware</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-Awards</a>
               </li>
             
             <div class="clearfix"></div>
@@ -446,6 +418,12 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">我是没事的时候&lt;br&gt;在无聊的时候&lt;br&gt;想的时候&lt;br&gt;到一个地方&lt;br&gt;不相同的地方&lt;br&gt;到这个地方来&lt;br&gt;来的吧&lt;br&gt;可以瞧一瞧&lt;br&gt;不一样的地方&lt;br&gt;不相同的地方&lt;br&gt;很多很多&lt;br&gt;&lt;br&gt; ——吟游诗人</div>
+  	  	
+    	</section>
     
   </div>
   
