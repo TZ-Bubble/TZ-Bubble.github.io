@@ -468,16 +468,16 @@
 
 
 <h1 id="Pick-up-Sticks-Fetching-Strategy-Generation-System-2020"><a href="#Pick-up-Sticks-Fetching-Strategy-Generation-System-2020" class="headerlink" title="Pick-up Sticks Fetching Strategy Generation System (2020)"></a>Pick-up Sticks Fetching Strategy Generation System (2020)</h1><p><strong>[Background]</strong><br>● A research project of internship</p>
-<p>● A common scenario in the actual industrial production environment (assembly line or construction site) is as follows: while confronting several workpieces in a crowd, it is general for human to generate a fetching strategy unconsciously which signifies people know the placing ordering of workpieces. The problem referred to as crowd occlusion. In this study, we propose a method to solve it with the lowest relative cost.</p>
+<p>● A paper under construction</p>
 <p><strong>[Function]</strong>  </p>
+<p>● In this study, we proposed a method to solve the problem mentioned below with the lowest relative cost.  A common scenario in the actual industrial production environment (assembly line or construction site) is as follows: while confronting several workpieces in a crowd, it is general for humans to generate a <strong>fetching strategy</strong> unconsciously which signifies people know the placing ordering of workpieces. But it is difficult for robots to do so and this problem referred to as <strong>crowd occlusion</strong>. </p>
 <p>● To remove the objects above for a better global view or better force bearing points for grasping other objects underneath.</p>
 <p>● To guarantee the safety of objects’ by preventing collisions and falls during executing grasp actions.</p>
 <p>● To make the cluttering stack stable as much as possible during grasping so that replanning the strategy is unnecessary..  </p>
-<p><strong>[Realization]</strong><br>● Firstly, we trained the Mask R-CNN with a dataset that contains hundreds of manual labeled images of workpieces of different specifications standards. </p>
-<p>●We utilized this neural network to get the precise counting of workpieces and get each precise location respectively from each image shot by a monocular RGB camera. Then extract occlusion regions, which will later be used for giving the stacking position ordering of workpieces. </p>
-<p>● As the ordering relationships are given, we can generate a fetching strategy through the global sort algorithm. </p>
-<p>● What is more, we made a GUI and coined a name, the Pick-up Sticks Fetching Strategy Generation System, for our system. </p>
-<p>● Finally, we demonstrated our method on ABB YuMi robot and complete a series of tasks.</p>
+<p><strong>[Realization]</strong><br>● Firstly, we trained the <strong>Mask R-CNN</strong> with a dataset that contains hundreds of manual labeled images of workpieces of different specifications standards. </p>
+<p>●We utilized this neural network to get the precise counting of workpieces and get each precise location respectively from each image shot by a <strong>monocular RGB camera</strong>. </p>
+<p>● Then extract occlusion regions, which will later be used for giving the stacking position ordering of workpieces with a local sort method(<strong>OpenCV+Halcon</strong>). As the ordering relationships are given, we can generate a fetching strategy through the global sort algorithm(<strong>Topological Sort Algorithm</strong>). </p>
+<p>●  Finally, we made a <strong>GUI(Qt)</strong> for our system. And demonstrated our method on <strong>ABB YuMi robot</strong> and complete a series of tasks.</p>
 
       
 
